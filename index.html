@@ -63,13 +63,40 @@
 <body onload="BlocklyDuino.init()">
     <div class="loading"></div>
     <div id="header">
-        <div id="logo_Titre">
+        <span id="logo_Titre">
             <a href="./index.html">
                 <img id="clearLink" src="media/BlocklyArduino/logo.png" border="0" height="36" onclick="" />
             </a>
-        </div>
-        <div id="header_titres">
-            <div id="divTitreMenu" class="hidden">
+        </span>
+        <span id="divCard">
+            <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
+            <span id="board_select_AIO_off"></span>
+            <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
+                <option value="none">...</option>
+                <optgroup label="Arduino">
+                    <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
+                    <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
+                    <option value="arduino_uno">Arduino/Genuino UNO</option>
+                </optgroup>
+                <optgroup label="ESP">
+                    <option value="esp8266">ESP8266</option>
+                    <option value="esp32">ESP32</option>
+                </optgroup>
+            </select>
+        </span>
+        <span>
+            <button id="btn_wiring" class="btn btn-primary">
+                <span class="fa fa-plug"></span>
+            </button>
+            <button id="btn_factory" class="btn btn-sm btn-primary">
+                <span class="fa fa-industry"> </span>
+            </button>
+            <button id="btn_screenduino" class="btn btn-sm btn-primary">
+                <span class="glyphicon glyphicon-th"> </span>
+            </button>
+        </span>
+        <!-- <div id="header_titres">
+            <div id="divTitreMenu">
                 <div id="divTitreMenu_menu">
                     <nav id="nav_hor">
                         <ul id="main-menu">
@@ -81,8 +108,8 @@
                                     </li>
                                     <li>
                                         <a href="#" id="menu_12"> <span id="span_menu_12"> </span> </a>
-                                    </li>
-                                    <li>
+                                    </li> -->
+                                    <!-- <li>
                                         <a id="menu_13"> <span id="span_menu_13"> </span> <i class="fa fa-caret-right"></i></a>
                                         <ul class="submenu">
                                             <li>
@@ -95,10 +122,10 @@
                                                 <a href="https://github.com/technologiescollege/BlocklyArduino-example" id="menu_133" target="_blank"> <span id="span_menu_133"> </span> </a>
                                             </li>
                                         </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
+                                    </li> -->
+                                <!-- </ul>
+                            </li> -->
+                            <!-- <li>
                                 <a><i class="fa fa-briefcase"></i> <span id="span_menu_2"> </span> <i class="fa fa-caret-down"></i></a>
                                 <ul class="submenu">
                                     <li>
@@ -114,8 +141,8 @@
                                         <a href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab" id="menu_24"> <span id="span_menu_24"> </span> </a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a><i class="fa fa-user"></i> <span id="span_menu_3"> </span> <i class="fa fa-caret-down"></i></a>
                                 <ul class="submenu">
                                     <li>
@@ -125,8 +152,8 @@
                                         <a href="#" id="menu_32"> <span id="span_menu_32"> </span> </a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a><i class="fa fa-user"></i> <span id="span_menu_4"> </span> <i class="fa fa-caret-down"></i></a>
                                 <ul class="submenu">
                                     <li>
@@ -189,13 +216,13 @@
                                 <a href="#" id="btn_menu_about" data-toggle="modal" data-target="#aboutModal">
                                     <span id="span_menu_6"> </span>
                                 </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                        <!-- </ul>
                     </nav>
                 </div>
-            </div>
-            <div id="divTitre">
-                <div id="btn_levels">
+            </div> -->
+            <!-- <div id="divTitre"> -->
+                <!-- <div id="btn_levels">
                     <a href="#" id="toolbox_algo" class="btn btn-level btn-default" role='button'>0</a>
                     <a href="#" id="toolbox_arduino_1" class="btn btn-level btn-default" role='button'>1</a>
                     <a href="#" id="toolbox_arduino_2" class="btn btn-level btn-default" role='button'>2</a>
@@ -203,8 +230,8 @@
                     <a href="#" id="toolbox_arduino_4" class="btn btn-level btn-default" role='button'>4</a>
                     <a href="#" id="toolbox_arduino_all" class="btn btn-level btn-default" role='button'>TOUT</a>
                     <label id="labelToolboxDefinition"></label>
-                </div>
-                <div id="barre">
+                </div> -->
+                <!-- <div id="barre">
                     <button id="btn_edit_code" class="btn btn-arduinoRect" data-toggle="modal" data-target="#editModal">
                             <span id="icon_edit_btn" class="glyphicon glyphicon-edit"> </span>
                         </button>
@@ -222,20 +249,20 @@
                         </button>
                     <button id="btn_term" class="btn btn-arduinoRect" disabled="">
                             <span class="fas fa-search fa-flip-horizontal fa-1_5x fa-fw"> </span>
-                        </button>
+                        </button> -->
                     <!-- <button id="btn_pasteIDEArduino" class="btn btn-arduino"> -->
                     <!-- <span class="fa fa-folder-open"> </span> -->
                     <!-- <span id="span_pasteIDEArduino"> </span> -->
                     <!-- </button> -->
-                    <span id="survol" style="color:white"></span>
-                </div>
-            </div>
-            <div id="divTitreMenu_miniCard">
+                    <!-- <span id="survol" style="color:white"></span>
+                </div> -->
+            <!-- </div> -->
+            <!-- <div id="divTitreMenu_miniCard">
                 <a href="#" id="miniCard_Menu">
                     <img id="arduino_card_miniPicture_Menu" height="36" border="0" />
                 </a>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
 
         <div id="tools_blocks" class="tab-pane active">
             <button id="btn_undo" class="btn btn-default">
@@ -244,10 +271,10 @@
             <button id="btn_redo" class="btn btn-default">
                     <span class="fa fa-repeat"> </span>
                 </button>
-            <button id="btn_block_capture" class="btn btn-default">
+            <!-- <button id="btn_block_capture" class="btn btn-default">
                     <span id="icon_btn_block_capture" class="glyphicon glyphicon-camera"> </span>
-                </button>
-            <button id="btn_blocs_picture_mini" class="btn btn-default">
+                </button> -->
+            <!-- <button id="btn_blocs_picture_mini" class="btn btn-default">
                     <span id="icon_btn_blocs_picture_mini" class="glyphicon glyphicon-zoom-out"> </span>
                 </button>
             <button id="btn_blocs_picture_maxi" class="btn btn-default">
@@ -255,16 +282,16 @@
                 </button>
             <button id="btn_blocs_picture" class="btn btn-default">
                     <span id="icon_btn_blocs_picture" class="glyphicon glyphicon-eye-open"> </span>
-                </button>
+                </button> -->
             <button id="btn_preview" class="btn btn-default">
                     <span id="icon_btn_preview" class="glyphicon glyphicon-sunglasses"> </span>
                 </button>
-            <button id="btn_inline" class="btn btn-default">
+            <!-- <button id="btn_inline" class="btn btn-default">
                     <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
-                </button>
-            <button id="btn_size" class="btn btn-default">
+                </button> -->
+            <!-- <button id="btn_size" class="btn btn-default">
                     <span id="icon_btn_size" class="glyphicon"> </span>
-                </button>
+                </button> -->
             <div id="toggle_code" class="modal-content" style="display: none;">
                 <pre id="pre_previewArduino" title="Code"></pre>
                 <button id="btn_CopyCode" class="btn btn-warning" data-clipboard-action="copy" data-clipboard-target="#pre_previewArduino">
@@ -276,25 +303,43 @@
     <div id="divBody">
         <div id="menuPanel">
             <div id="menuPanelConfig">
-                <button id="btn_configGlobal" class="btn btn-sm btn_ver btn-danger btn-block" data-toggle="modal" data-target="#configModalGlobal">
+                <!-- <div id="divCard">
+                    <br />
+                    <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
+                    <div id="board_select_AIO_off"></div>
+                    <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
+                            <option value="none">...</option>
+                            <optgroup label="Arduino">
+                                <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
+                                <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
+                                <option value="arduino_uno">Arduino/Genuino UNO</option>
+                            </optgroup>
+                            <optgroup label="ESP">
+                                <option value="esp8266">ESP8266</option>
+                                <option value="esp32">ESP32</option>
+                            </optgroup>
+                        </select>
+                </div> -->
+                
+                <!-- <button id="btn_configGlobal" class="btn btn-sm btn_ver btn-danger btn-block" data-toggle="modal" data-target="#configModalGlobal">
                         <span class="glyphicon glyphicon-alert"> </span>
                         <span id="configGlobalLabel"> </span>
-                    </button>
+                    </button> -->
                 <div id="div_miniPicture">
                     <a id="miniCard">
                         <img id="arduino_card_miniPicture" />
                     </a>
                 </div>
-                <button id="btn_config" class="btn btn-sm btn-warning btn-block " data-toggle="modal" data-target="#configModal">
+                <!-- <button id="btn_config" class="btn btn-sm btn-warning btn-block " data-toggle="modal" data-target="#configModal">
                         <span class="fa fa-cogs"> </span>
                         <span id="span_config"> </span>
                     </button>
                 <a href="#" id="btn_config_kit" target="_blank" class="btn btn-sm btn-warning btn-block hidden" role='button'>
                     <span class="glyphicon glyphicon-th-list"> </span>
                     <span id="span_config_kit"> </span>
-                </a>
+                </a> -->
             </div>
-            <div id="menuPanelBlockly" class="margin-top-5">
+            <!-- <div id="menuPanelBlockly" class="margin-top-5">
                 <ul id="ul_nav" role="tablist">
                     <li role="presentation" id="tab_supervision" class="disabled">
                         <a href="https://github.com/technologiescollege/BlocklyArduino_AIO" target="_blank">
@@ -311,12 +356,12 @@
                     <li role="presentation" id="tab_arduino">
                         <a href="#content_arduino" aria-controls="content_arduino" role="tab" data-toggle="tab">
                             <span class="fa fa-code"></span>
-                            <!--span class="glyphicon glyphicon-education"></span-->
+                            <span class="glyphicon glyphicon-education"></span>
                             <span id="a_arduino"></span>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <div id="menuPanelFiles">
                 <a id="btn_saveXML" class='btn btn-sm btn-success btn-block' href="#" role='button'>
                     <span class="fas fa-cloud-download-alt"></span>
@@ -326,28 +371,20 @@
                         <span class="fas fa-cloud-upload-alt"></span>
                         <span id="span_fakeload"> </span>
                     </button>
-                <button id="btn_example" class="btn btn-sm btn-info btn-block" data-toggle="modal" data-target="#exampleModal">
+                <!-- <button id="btn_example" class="btn btn-sm btn-info btn-block" data-toggle="modal" data-target="#exampleModal">
                         <span class="glyphicon glyphicon-list-alt"> </span>
                         <span id="span_example"> </span>
                     </button>
                 <a id="btn_create_example" class="btn btn-sm btn_ver btn-info btn-block" href="#" target="_blank" role='button'>
                     <span class="glyphicon glyphicon-wrench"> </span>
                     <span id="span_create_example"> </span>
-                </a>
+                </a> -->
             </div>
             <input type="file" id="load" accept=".B@, .xml" style="display: none;" />
-            <div id="div_tools_button">
-                <button id="btn_wiring" class="btn btn-primary">
-                        <span class="fa fa-plug"></span>
-                    </button>
+            <!-- <div id="div_tools_button">
+                
                 <br />
                 <br />
-                <button id="btn_factory" class="btn btn-sm btn-primary">
-                        <span class="fa fa-industry"> </span>
-                    </button>
-                <button id="btn_screenduino" class="btn btn-sm btn-primary">
-                        <span class="glyphicon glyphicon-th"> </span>
-                    </button>
                 <button id="btn_RGB" class="btn btn-sm btn-primary">
                         <span class="fas fa-palette"> </span>
                     </button>
@@ -358,7 +395,7 @@
                 <br />
                 <button id="btn_miniMenuPanel" class="btn btn-sm btn-default">
                         <span class="glyphicon glyphicon-step-backward"> </span>
-                    </button>
+                    </button> 
                 <a href="./index.html" id="btn_reset" class="btn btn-sm btn-danger">
                     <span class="glyphicon glyphicon-off"> </span>
                 </a>
@@ -377,7 +414,7 @@
                             <span class="glyphicon glyphicon-euro"></span>
                         </button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- Nav tabs -->
         <div id="divTabpanel" role="tabpanel">
@@ -389,7 +426,7 @@
                             <span id="span_delete"> </span>
                         </button>
                 </div>
-                <div id="content_arduino" class="tab-pane">
+                <!-- <div id="content_arduino" class="tab-pane">
                     <pre id="pre_arduino"></pre>
                     <div id="barre_h">
                         <div id="checkDetails">
@@ -398,9 +435,9 @@
                     </div>
                     <div id="local_debug"></div>
                     <div id="barre"></div>
-                </div>
-                <div id="content_supervision" class="tab-pane">
-                </div>
+                </div> -->
+                <!-- <div id="content_supervision" class="tab-pane"> -->
+                <!-- </div> -->
                 <!--div id="content_xml" class="tab-pane">
                             <pre id="pre_xml"></pre>
                     </div-->
@@ -409,7 +446,7 @@
     </div>
     <!-- Modals -->
     <!-- about modal -->
-    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -463,9 +500,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- paypal modal -->
-    <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="paypalModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="paypalModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -491,7 +528,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ajax modal -->
     <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="ajaxModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -512,7 +549,7 @@
         </div>
     </div>
     <!-- picture modal -->
-    <div id="pictureModalLabel" style="display:none">
+    <!-- <div id="pictureModalLabel" style="display:none">
         <div id="pictureModalLabel_boutons">
             <button id="btn_card_picture_mini" class="btn btn-default">
                     <span id="icon_btn_blocs_picture_mini" class="glyphicon glyphicon-minus"> </span>
@@ -528,9 +565,9 @@
         <div id="arduino_card_picture_inModal">
             <img id="arduino_card_picture" width="200" />
         </div>
-    </div>
+    </div> -->
     <!-- example modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -548,7 +585,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- show wiring of example "modal" -->
     <div id="wiringModal" class="modal-dialog" style="display:none;width: 100%;">
         <!-- <div id="pictureModalLabel_boutons"> -->
@@ -563,7 +600,7 @@
         </div>
     </div>
     <!-- convert bin <-> text "modal" -->
-    <div id="convertModal" class="modal-dialog" style="display:none">
+    <!-- <div id="convertModal" class="modal-dialog" style="display:none">
         <input id="ti1" value="TEST" />
         <button onclick="BlocklyDuino.text2bin();"><span id="span_txt2bin"> </span></button>
         <input id="ti2" />
@@ -571,19 +608,19 @@
         <input id="ti3" value="01010101" />
         <button onclick="BlocklyDuino.bin2text();"><span id="span_bin2txt"> </span></button>
         <input id="ti4" />
-    </div>
+    </div> -->
     <!-- create char for LCD code "modal" -->
     <div id="screen_falsemodal" style="display:none">
         <iframe frameborder="0" marginwidth="0" marginheight="0">
             </iframe>
     </div>
     <!-- convert RGB color code "modal" -->
-    <div id="RGB_falsemodal" style="display:none">
+    <!-- <div id="RGB_falsemodal" style="display:none">
         <iframe frameborder="0" marginwidth="0" marginheight="0">
             </iframe>
-    </div>
+    </div> -->
     <!-- toolbox config modal -->
-    <div class="modal fade" id="configModal" tabindex="-1" role="dialog" aria-labelledby="configModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="configModal" tabindex="-1" role="dialog" aria-labelledby="configModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -616,9 +653,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- edit code modal -->
-    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -634,9 +671,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- global config modal -->
-    <div class="modal fade" id="configModalGlobal" tabindex="-1" role="dialog" aria-labelledby="configModalGlobalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="configModalGlobal" tabindex="-1" role="dialog" aria-labelledby="configModalGlobalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -652,92 +689,12 @@
                     </div>
                     <div class="modal-body-config-global_left">
                         <span class="fa fa-language"></span> <label id="span_languageMenu"> </label> <select id="languageMenu"></select><br/>
-                        <!-- <label id="textSize" class="mod">Text size</label> -->
-                        <!-- <input name="textSizeSelect" class="form-control" style="" min="0" max="30" step="1" value="12" type="number"> -->
-                        <!-- </input> -->
                         <br />
                         <select id="fontChoice" onchange="BlocklyDuino.changeFontURL(this[this.selectedIndex].value)" onmousemove="BlocklyDuino.changeFont()">
                                 <option value="O">OpenDyslexic</option>
                                 <option value="T">Trebuchet MS</option>
                                 <option value="V">Verdana</option>
                             </select>
-                        <div id="divCard">
-                            <br />
-                            <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
-                            <div id="board_select_AIO_off"></div>
-                            <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
-                                    <option value="none">...</option>
-                                    <optgroup label="Arduino">
-                                        <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
-                                        <option value="arduino_mega">Arduino/Genuino MEGA 2560</option>
-                                        <option value="arduino_micro">Arduino/Genuino MICRO</option>
-                                        <option value="arduino_mini">Arduino/Genuino MINI ATmega328</option>
-                                        <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
-                                        <option value="arduino_pro8">Arduino/Genuino Pro Mini 3.3V ATmega328</option>
-                                        <option value="arduino_pro16">Arduino/Genuino Pro Mini 5V ATmega328</option>
-                                        <option value="arduino_uno">Arduino/Genuino UNO</option>
-                                        <option value="arduino_yun">Arduino/Genuino YUN</option>
-                                        <option value="lilypad">LilyPad ATmega328P</option>
-                                    </optgroup>
-                                    <optgroup label="DAGU">
-                                        <option value="dagu_rs027">Dagu RS027</option>
-                                        <option value="dagu_rs040">Dagu RS040</option>
-                                    </optgroup>
-                                    <optgroup label="DFRobot">
-                                        <option value="dfrobot_romeo">DFRobot RoMeo v2</option>
-                                        <option value="dfrobot_romeo_ble">DFRobot RoMeo BLE</option>
-                                    </optgroup>
-                                    <optgroup label="ESP">
-                                        <option value="esp8266">ESP8266</option>
-                                        <option value="esp32">ESP32</option>
-                                    </optgroup>
-                                    <optgroup label="Franzininho">
-                                        <option value="franzininho_DIY">Franzininho DIY</option>
-                                        <option value="franzininho_wifi">Franzininho WiFi</option>
-                                    </optgroup>
-                                    <optgroup label="Makeblok">
-                                        <option value="makeblock_mcore">mBot/mCore</option>
-                                        <option value="makeblock_megaPi">MegaPi</option>
-                                        <option value="makeblock_orion">Orion</option>
-                                    </optgroup>
-                                    <optgroup label="Otto">
-                                        <option value="kit_otto_diy">Otto DIY</option>
-                                    </optgroup>
-                                    <optgroup label="Peguino">
-                                        <option value="peguino_uno_esp32">Peguino Uno ESP32</option>
-                                        <option value="peguino_uno_nano">Peguino Uno Nano</option>
-                                        <option value="kit_peguino_bot1">Peguino Bot 1</option>
-                                    </optgroup>
-                                    <optgroup label="Teensy">
-                                        <option value="teensy2">Teensy 2.0</option>
-                                        <option value="teensy2pp">Teensy++ 2.0</option>
-                                    </optgroup>
-                                    <optgroup label="Robobox">
-                                        <option value="kit_robobox_1_1">mini-alarme v1</option>
-                                        <option value="kit_robobox_2_1">bras articulé v1</option>
-                                        <option value="kit_robobox_3_1">robot chien v1</option>
-                                        <option value="kit_robobox_4_1">robot voiture v1</option>
-                                        <option value="kit_robobox_1_2">mini-alarme v2</option>
-                                        <option value="kit_robobox_2_2">bras articulé v2</option>
-                                        <option value="kit_robobox_3_2">robot chien v2</option>
-                                        <option value="kit_robobox_4_2">robot voiture v2</option>
-                                        <option value="kit_robobox_5_2">robot voiture v2</option>
-                                    </optgroup>
-                                    <optgroup label="Kits">
-                                        <option value="kit_grove_beginner">Grove Beginner Kit</option>
-                                        <option value="kit_crowtail_arduino">Crowtail Starter Kit for Arduino</option>
-                                        <option value="kit_microfeux">Micro-feux Jeulin</option>
-                                        <option value="kit_petitbot">Petit Bot</option>
-                                    </optgroup>
-                                    <optgroup label="MicroBit">
-                                        <option value="kit_microbit">Micro:bit</option>
-                                    </optgroup>
-                                    <optgroup label="COG">
-                                        <option value="kit_microsaurus">MicroSaurus</option>
-                                        <option value="kit_micromachine">MicroMachine</option>
-                                    </optgroup>
-                                </select>
-                        </div>
                         <br />
                         <br />
                         <br />
@@ -755,14 +712,6 @@
                         <br />
                         <br />
                         <br />
-                        <!-- <div id="div_accessibility_button"> -->
-                        <!-- <button id="btn_font" class="btn btn-warning"> -->
-                        <!-- <span class="glyphicon glyphicon-text-height"> </span> -->
-                        <!-- </button> -->
-                        <!-- <button id="btn_colors" class="btn btn-warning jscolor {valueElement:null,value:'F0AD4E'}" onchange="update(this.jscolor)"> -->
-                        <!-- <span class="glyphicon glyphicon-tint"> </span> -->
-                        <!-- </button> -->
-                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -770,7 +719,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- variable modal -->
     <div class="modal fade" id="variableModal" tabindex="-1" role="dialog" aria-labelledby="variableModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">

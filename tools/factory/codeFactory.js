@@ -33,46 +33,46 @@ var CodeFactory = {};
 /**
  * Lookup for names of supported languages.  Keys should be in ISO 639 format.
  */
-CodeFactory.LANGUAGE_NAME = {
-		  'de': 'Deutsch',
-		  'en': 'English',
-		  'fr': 'Français',
-		  'jp': 'Japanese',
-		};
+// CodeFactory.LANGUAGE_NAME = {
+// 		  'de': 'Deutsch',
+// 		  'en': 'English',
+// 		  'fr': 'Français',
+// 		  'jp': 'Japanese',
+// 		};
 
 /**
  * List of RTL languages.
  */
-CodeFactory.LANGUAGE_RTL = ['ar', 'fa', 'he'];
+// CodeFactory.LANGUAGE_RTL = ['ar', 'fa', 'he'];
 
 /**
  * Get the language of this user from the URL.
  * @return {string} User's language.
  */
-CodeFactory.getLang = function() {
-  var val = location.search.match(new RegExp('[?&]lang=([^&]+)'));
-  var lang = val ? decodeURIComponent(val[1].replace(/\+/g, '%20')) : '';
+// CodeFactory.getLang = function() {
+//   var val = location.search.match(new RegExp('[?&]lang=([^&]+)'));
+//   var lang = val ? decodeURIComponent(val[1].replace(/\+/g, '%20')) : '';
 
-  if (CodeFactory.LANGUAGE_NAME[lang] === undefined) {
-    // Default to English.
-    lang = 'en';
-  }
-  return lang;
-};
+//   if (CodeFactory.LANGUAGE_NAME[lang] === undefined) {
+//     // Default to English.
+//     lang = 'en';
+//   }
+//   return lang;
+// };
 
 /**
  * Is the current language (CodeFactory.LANG) an RTL language?
  * @return {boolean} True if RTL, false if LTR.
  */
-CodeFactory.isRtl = function() {
-  return CodeFactory.LANGUAGE_RTL.indexOf(CodeFactory.LANG) != -1;
-};
+// CodeFactory.isRtl = function() {
+//   return CodeFactory.LANGUAGE_RTL.indexOf(CodeFactory.LANG) != -1;
+// };
 
 /**
  * User's language (e.g. "en").
  * @type string
  */
-CodeFactory.LANG = CodeFactory.getLang();
+// CodeFactory.LANG = CodeFactory.getLang();
 
 /**
  * Initialize the block factory language.

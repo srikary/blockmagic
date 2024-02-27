@@ -44,11 +44,6 @@ html,body {
 	float: left;
 }
 
-#header_titres {
-	margin-left: 205px;
-	position: absolute;
-}
-
 #header_code {
 	margin-left: 205px;
 	margin-bottom: 5px;
@@ -61,19 +56,19 @@ html,body {
 	position: absolute;
 }
 
-#divTitre, #divTitreMenu {
+/* #divTitre, #divTitreMenu {
 	float: left;
-}
+} */
 
 #btn_levels {
 	margin-top: 5px;
 	margin-left: 10px;
 }
 
-#divTitre p {
+/* #divTitre p {
 	font-size: 15px;
 	font-family: "OpenDyslexic";
-}
+} */
 
 #div_toolboxes {
 	float: left;
@@ -128,7 +123,7 @@ html,body {
 	border: 1px solid #000000;
 	padding: 12px 6px;
 }
-#tab_supervision, #tab_blocks, #tab_arduino {
+/* #tab_supervision, #tab_blocks, #tab_arduino {
 	font-size: 14px;
 	line-height: 0;
 	padding: 0px 0px;
@@ -138,10 +133,10 @@ html,body {
 	background-color: #FFFFFF; 
 	border-color: #000000;
 	color: #000000;
-}
-#serialport_ide{
+} */
+/* #serialport_ide{
 	top: 5px;
-}
+} */
 /*----------------------------------------------- */
 .menuPanel-ver {
 	clear: both;
@@ -153,14 +148,14 @@ html,body {
 	height: 100%;
 }
 
-html[dir="RTL"] .menuPanel-ver {
+/* html[dir="RTL"] .menuPanel-ver {
     clear: both;
     float: right;
     width: 200px;
     padding-left: 0px;
     padding-right: 10px;
     position: absolute;
-}
+} */
 
 .div_close_modal {
 	padding-right: 10px;	
@@ -176,7 +171,7 @@ html[dir="RTL"] .menuPanel-ver {
 	right: 5px;
 }
 
-#btn_card_picture_mini {
+/* #btn_card_picture_mini {
 	padding-right: 10px;	
 	float: left;
 	text-align: center;
@@ -186,7 +181,7 @@ html[dir="RTL"] .menuPanel-ver {
 	padding-right: 10px;	
 	float: left;
 	text-align: center;
-}
+} */
 
 .div_miniPicture-ver {
 /*     position: absolute; */
@@ -240,10 +235,10 @@ html[dir="RTL"] .menuPanel-ver {
     text-align: center;
 }
 
-html[dir="RTL"] .navbar-right {
+/* html[dir="RTL"] .navbar-right {
     margin-right: -50px;
     width: 225px;
-}
+} */
 
 .btn_ver {
 	text-align : left !important;
@@ -255,14 +250,14 @@ html[dir="RTL"] .navbar-right {
 	margin-left:205px;
 }
 
-html[dir="RTL"] .divTabpanel-ver {
+/* html[dir="RTL"] .divTabpanel-ver {
     margin-left:0px;
     margin-right:205px;
 }
 
 html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="RTL"] #menuPanelFiles {
     float: right;
-}
+} */
 
 .menuPanelBlockly-hor {
 	clear:both;
@@ -270,21 +265,21 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	padding-left: 10px;	
 }
 
-html[dir="RTL"] .menuPanelBlockly-hor, html[dir="RTL"] .menuPanelBlockly-ver {
+/* html[dir="RTL"] .menuPanelBlockly-hor, html[dir="RTL"] .menuPanelBlockly-ver {
     float: right;
     padding-right: 10px;
 	margin-top: 10px;
-}
+} */
 
 .menuPanelFiles-hor {
 	float: right;
 	padding-right: 10px;
 }
 
-html[dir="RTL"] .menuPanelFiles-hor {
+/* html[dir="RTL"] .menuPanelFiles-hor {
     float: left;
     padding-left: 10px;
-}
+} */
 
 .divTabpanel-hor {
     position: absolute;
@@ -295,19 +290,19 @@ html[dir="RTL"] .menuPanelFiles-hor {
     margin-left: 10px;
 }
 
-html[dir="RTL"] .divTabpanel-hor {
+/* html[dir="RTL"] .divTabpanel-hor {
     margin-left: 0px;
-}
+} */
 
 .divSwitch-hor {
     float: left;
     padding-left: 10px;
 }
 
-html[dir="RTL"] .divSwitch-hor {
+/* html[dir="RTL"] .divSwitch-hor {
     float: right;
     padding-right: 10px;
-}
+} */
 
 .divCard-hor {
     float: left;
@@ -330,20 +325,20 @@ html[dir="RTL"] .divSwitch-hor {
 	max-height:300px;
 }
 
-html[dir="RTL"] .divCard-hor {
+/* html[dir="RTL"] .divCard-hor {
     float: right;
     padding-right: 10px;
-}
+} */
 
 .divConfig-hor {
     float: left;
     padding-left: 10px;
 }
 
-html[dir="RTL"] .divConfig-hor {
+/* html[dir="RTL"] .divConfig-hor {
     float: right;
     padding-right: 10px;
-}
+} */
 
 #btn_logout {
     position: absolute;
@@ -361,10 +356,10 @@ html[dir="RTL"] .divConfig-hor {
 	right: 15px;*/
 }
 
-html[dir="RTL"] #languageMenu {
+/* html[dir="RTL"] #languageMenu {
 	left: 10px;
 	right: auto;
-}
+} */
 
 #content_area,#content_blocks,#content_factory {
 	height: 100%;
@@ -415,11 +410,11 @@ html[dir="RTL"] #languageMenu {
 	padding : 2px 5px 5px 10px;
 	background-color : #018790;
 }
-#btn_term {
+/* #btn_term {
 	right: 15px;
 	top: 5px;
 	z-index: 10;
-}
+} */
 #pre_arduino {
     height: 70%;
     width: 100%;
@@ -427,9 +422,9 @@ html[dir="RTL"] #languageMenu {
 #serial-checboxes {
     margin-left: 20px;
 }
-html[dir="RTL"] #toggle_code {
+/* html[dir="RTL"] #toggle_code {
     left: 25px;
-}
+} */
 
 #toggle_code pre {
 	height: 100%;
@@ -442,9 +437,9 @@ html[dir="RTL"] #toggle_code {
 	z-index: 10;
 }
 
-html[dir="RTL"] #btn_delete {
+/* html[dir="RTL"] #btn_delete {
     left: 100px;
-}
+} */
 
 #pre_xml {
 	height: 85%;
@@ -466,9 +461,9 @@ html[dir="RTL"] #btn_delete {
 	margin-left: 15px;
 }
 
-html[dir="RTL"] #select_all {
+/* html[dir="RTL"] #select_all {
     margin-right: 15px;
-}
+} */
 
 #span_select_all {
 	font-weight: bold;
@@ -531,9 +526,9 @@ html[dir="RTL"] #select_all {
 	padding: 6px 50px 6px 12px !important;
 }
 
-html[dir="RTL"] .blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]   .blocklyTreeRow {
+/* html[dir="RTL"] .blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]   .blocklyTreeRow {
     padding: 6px 12px 6px 50px !important;
-}
+} */
 
 .blocklyTreeRow {
 	height: 30px !important;
@@ -558,9 +553,9 @@ html[dir="RTL"] .blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]   .blockly
 	width: 8px;
 }
 
-html[dir="RTL"] .colors_category {
+/* html[dir="RTL"] .colors_category {
     right: 0;
-}
+} */
 
 .loading {
     position: fixed;

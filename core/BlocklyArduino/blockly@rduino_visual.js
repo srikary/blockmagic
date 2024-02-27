@@ -40,58 +40,58 @@ BlocklyDuino.changeFont = function () {
     return FontChoice;
 };
 
-BlocklyDuino.changeFontURL = function () {
-    var FontChoiceUrl = BlocklyDuino.getStringParamFromUrl('font', '');
-    if (FontChoiceUrl === undefined || FontChoiceUrl === 'O') {
-        document.body.style.fontFamily = "OpenDyslexic";
-        var FontChoice = "O";
-    }
-    if (FontChoiceUrl === 'T') {
-        document.body.style.fontFamily = "Trebuchet MS";
-        var FontChoice = "T";
-    }
-    if (FontChoiceUrl === 'V') {
-        document.body.style.fontFamily = "V";
-        var FontChoice = "V";
-    }
-    return FontChoice;
-};
+// BlocklyDuino.changeFontURL = function () {
+//     var FontChoiceUrl = BlocklyDuino.getStringParamFromUrl('font', '');
+//     if (FontChoiceUrl === undefined || FontChoiceUrl === 'O') {
+//         document.body.style.fontFamily = "OpenDyslexic";
+//         var FontChoice = "O";
+//     }
+//     if (FontChoiceUrl === 'T') {
+//         document.body.style.fontFamily = "Trebuchet MS";
+//         var FontChoice = "T";
+//     }
+//     if (FontChoiceUrl === 'V') {
+//         document.body.style.fontFamily = "V";
+//         var FontChoice = "V";
+//     }
+//     return FontChoice;
+// };
 
-BlocklyDuino.cardPicture_maxi = function () {
-    var img = $("#arduino_card_picture");
-    var modal = $("#pictureModalLabel").parent();
+// BlocklyDuino.cardPicture_maxi = function () {
+//     var img = $("#arduino_card_picture");
+//     var modal = $("#pictureModalLabel").parent();
 
-    if ((img.width() < 450)||(img.height() < 650))
-    {
-        Blockly.Arduino.cardSize += 50;
-        img.animate({width: Blockly.Arduino.cardSize}, 500);
-        modal.animate({width: Blockly.Arduino.cardSize + 50}, 500);
-    }
-};
+//     if ((img.width() < 450)||(img.height() < 650))
+//     {
+//         Blockly.Arduino.cardSize += 50;
+//         img.animate({width: Blockly.Arduino.cardSize}, 500);
+//         modal.animate({width: Blockly.Arduino.cardSize + 50}, 500);
+//     }
+// };
 
-BlocklyDuino.cardPicture_mini = function () {
-    var img = $("#arduino_card_picture");
-    var modal = $("#pictureModalLabel").parent();
+// BlocklyDuino.cardPicture_mini = function () {
+//     var img = $("#arduino_card_picture");
+//     var modal = $("#pictureModalLabel").parent();
 
-    if ((img.width() > 200)||(img.height() > 220))
-    {
-        Blockly.Arduino.cardSize -= 50;
-        img.animate({width: Blockly.Arduino.cardSize}, 500);
-        modal.animate({width: Blockly.Arduino.cardSize + 50}, 500);
-    }
-};
+//     if ((img.width() > 200)||(img.height() > 220))
+//     {
+//         Blockly.Arduino.cardSize -= 50;
+//         img.animate({width: Blockly.Arduino.cardSize}, 500);
+//         modal.animate({width: Blockly.Arduino.cardSize + 50}, 500);
+//     }
+// };
 
 BlocklyDuino.cardPicture_change_AIO = function () {
     if ($("#board_select").val()) {
         // $('#arduino_card_miniPicture').attr("src", profile[$("#board_select").val()]['picture']);
         $('#arduino_card_mini_picture').attr("src", profile[$("#board_select").val()]['picture']);
         $('#arduino_card_picture').attr("src", profile[$("#board_select").val()]['picture']);
-        $('#arduino_card_miniPicture_Menu').attr("src", profile[$("#board_select").val()]['picture']);
+        // $('#arduino_card_miniPicture_Menu').attr("src", profile[$("#board_select").val()]['picture']);
     } else {
         // $('#arduino_card_miniPicture').attr("src", "");
         $('#arduino_card_mini_picture').attr("src", "");
         $('#arduino_card_picture').attr("src", "");
-        $('#arduino_card_miniPicture_Menu').attr("src", "");
+        // $('#arduino_card_miniPicture_Menu').attr("src", "");
     }
 };
 
@@ -112,13 +112,13 @@ BlocklyDuino.inline = function () {
     BlocklyDuino.workspace.clear();
     BlocklyDuino.loadBlocks(Blockly.Xml.domToPrettyText(xmlBlocks));
 
-    if (BlocklyDuino.inlineBool) {
-        $('#icon_btn_inline').removeClass('glyphicon-option-horizontal');
-        $('#icon_btn_inline').addClass('glyphicon-option-vertical');
-    } else {
-        $('#icon_btn_inline').addClass('glyphicon-option-horizontal');
-        $('#icon_btn_inline').removeClass('glyphicon-option-vertical');
-    }
+    // if (BlocklyDuino.inlineBool) {
+    //     $('#icon_btn_inline').removeClass('glyphicon-option-horizontal');
+    //     $('#icon_btn_inline').addClass('glyphicon-option-vertical');
+    // } else {
+    //     $('#icon_btn_inline').addClass('glyphicon-option-horizontal');
+    //     $('#icon_btn_inline').removeClass('glyphicon-option-vertical');
+    // }
 };
 
 
@@ -127,36 +127,36 @@ BlocklyDuino.inline = function () {
  *
  * @return {int} selectd size.
  */
-BlocklyDuino.getSize = function () {
-    var size = BlocklyDuino.getStringParamFromUrl('size', '');
-    if ((size != 'max') && (size != 'miniMenu')) {
-        size = '';
-    }
-    return size;
-};
+// BlocklyDuino.getSize = function () {
+//     var size = BlocklyDuino.getStringParamFromUrl('size', '');
+//     if ((size != 'max') && (size != 'miniMenu')) {
+//         size = '';
+//     }
+//     return size;
+// };
 
 /**
  * Maximize/Minimize content blocks div
  */
-BlocklyDuino.changeSize = function () {
-    // Store the blocks for the duration of the reload.
-    BlocklyDuino.backupBlocks();
+// BlocklyDuino.changeSize = function () {
+//     // Store the blocks for the duration of the reload.
+//     BlocklyDuino.backupBlocks();
 
-    var search = window.location.search;
-    if (search.length <= 1) {
-        search = '?size=max';
-    } else if (search.match(/[?&]size=[^&]*/)) {
-        search = search.replace(/([?&]size=)[^&]*/, '');
-        search = search.replace(/\&/, '?');
-    } else {
-        search = search.replace(/\?/, '?size=max&');
-    }
+//     var search = window.location.search;
+//     if (search.length <= 1) {
+//         search = '?size=max';
+//     } else if (search.match(/[?&]size=[^&]*/)) {
+//         search = search.replace(/([?&]size=)[^&]*/, '');
+//         search = search.replace(/\&/, '?');
+//     } else {
+//         search = search.replace(/\?/, '?size=max&');
+//     }
 
-    // remove url file
-    //search = search.replace(/([?&]url=)[^&]*/, '');
+//     // remove url file
+//     //search = search.replace(/([?&]url=)[^&]*/, '');
 
-    window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;
-};
+//     window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;
+// };
 
 
 /**
@@ -164,42 +164,42 @@ BlocklyDuino.changeSize = function () {
  */
 BlocklyDuino.setOrientation = function () {
 
-    var newOrientation = BlocklyDuino.getStringParamFromUrl('ort', '');
+    // var newOrientation = BlocklyDuino.getStringParamFromUrl('ort', '');
 
-    if (newOrientation == 'hor') {
-        $("#ul_nav").addClass("nav nav-pills");
-        $("#menuPanelConfig").addClass("menuPanelBlockly-hor");
-        $("#menuPanelBlockly").addClass("menuPanelBlockly-hor");
-        $("#menuPanelFiles").addClass("menuPanelFiles-hor");
-        $("#divTabpanel").addClass("divTabpanel-hor");
-        $("#div_help_button").addClass("div_help_button-hor");
-        $("#div_tools_button").addClass("div_tools_button-hor");
-        $("#div_miniPicture").addClass("div_miniPicture-hor");
+    // if (newOrientation == 'hor') {
+    //     $("#ul_nav").addClass("nav nav-pills");
+    //     $("#menuPanelConfig").addClass("menuPanelBlockly-hor");
+    //     $("#menuPanelBlockly").addClass("menuPanelBlockly-hor");
+    //     $("#menuPanelFiles").addClass("menuPanelFiles-hor");
+    //     $("#divTabpanel").addClass("divTabpanel-hor");
+    //     $("#div_help_button").addClass("div_help_button-hor");
+    //     $("#div_tools_button").addClass("div_tools_button-hor");
+    //     $("#div_miniPicture").addClass("div_miniPicture-hor");
 
-        $("#btn_config").removeClass("btn-block");
-        $("#btn_supervision").removeClass("btn-block");
+    //     $("#btn_config").removeClass("btn-block");
+    //     $("#btn_supervision").removeClass("btn-block");
 
-        $("#btn_saveXML").removeClass("btn-block");
-        $("#btn_fakeload").removeClass("btn-block");
-        $("#btn_example").removeClass("btn-block");
+    //     $("#btn_saveXML").removeClass("btn-block");
+    //     $("#btn_fakeload").removeClass("btn-block");
+    //     // $("#btn_example").removeClass("btn-block");
 
-    } else {
+    // } else {
         $("#ul_nav").addClass("nav nav-pills nav-stacked");
         $("#menuPanelBlockly").addClass("menuPanelBlockly-ver");
-        if (Code.isRtl()) {
-            $("#ul_nav").addClass("navbar-right");
-        }
+        // if (Code.isRtl()) {
+        //     $("#ul_nav").addClass("navbar-right");
+        // }
         $("#menuPanel").addClass("menuPanel-ver");
         $("#btn_config").addClass("btn_ver");
         $("#btn_supervision").addClass("btn_ver");
         $("#btn_saveXML").addClass("btn_ver");
         $("#btn_fakeload").addClass("btn_ver");
-        $("#btn_example").addClass("btn_ver");
+        // $("#btn_example").addClass("btn_ver");
         $("#divTabpanel").addClass("divTabpanel-ver");
         $("#div_help_button").addClass("div_help_button-ver");
         $("#div_tools_button").addClass("div_tools_button-ver");
         $("#div_miniPicture").addClass("div_miniPicture-ver");
-    }
+    // }
 };
 
 /**
@@ -208,20 +208,20 @@ BlocklyDuino.setOrientation = function () {
  * @return {int} selectd size.
  */
 BlocklyDuino.OnOffLine = function () {
-    var AIO = BlocklyDuino.getStringParamFromUrl('AIO', '');
-    if (AIO == 'on') {
-        $("#btn_configGlobal").addClass("hidden");
-        $("#btn_MiniconfigGlobal").addClass("hidden");
-        $("#pictureModalLabel").addClass("hidden");
-        $("#btn_card_picture_change").removeClass("hidden");
-        $('#board_select_AIO_on').prepend($('#board_select'));
-    } else if ((AIO == '') || (AIO == 'off')) {
+    // var AIO = BlocklyDuino.getStringParamFromUrl('AIO', '');
+    // if (AIO == 'on') {
+    //     $("#btn_configGlobal").addClass("hidden");
+    //     $("#btn_MiniconfigGlobal").addClass("hidden");
+    //     // $("#pictureModalLabel").addClass("hidden");
+    //     $("#btn_card_picture_change").removeClass("hidden");
+    //     $('#board_select_AIO_on').prepend($('#board_select'));
+    // } else if ((AIO == '') || (AIO == 'off')) {
         $("#btn_configGlobal").removeClass("hidden");
         $("#btn_MiniconfigGlobal").removeClass("hidden");
-        $("#pictureModalLabel").removeClass("hidden");
+        // $("#pictureModalLabel").removeClass("hidden");
         $("#btn_card_picture_change").addClass("hidden");
         $('#board_select_AIO_off').prepend($('#board_select'));
-    }
+    // }
 };
 
 BlocklyDuino.ExampleWiring = function () {
@@ -231,11 +231,11 @@ BlocklyDuino.ExampleWiring = function () {
     // ni exemple ni kit
     if ((ExampleTest === '') && (KitTestResult !== 'kit')) {
         $("#btn_wiring").addClass("hidden");
-        $("#menu_21").addClass("hidden");
+        // $("#menu_21").addClass("hidden");
 
     } else {
         $("#btn_wiring").removeClass("hidden");
-        $("#menu_21").removeClass("hidden");
+        // $("#menu_21").removeClass("hidden");
         // exemple mais pas kit
         if ((ExampleTest !== '') && (KitTestResult !== 'kit')) {
             // ExampleTest = ExampleTest.replace('.xml', '');
@@ -249,7 +249,7 @@ BlocklyDuino.ExampleWiring = function () {
             //c'est donc un kit
             $('#wiringModal_picture').prepend("<img src='media/boards/" + KitTest + "_wiring.jpg' id='wiringModalImg' width=100% height=auto/>");
             $("#btn_wiring").removeClass("hidden");
-            $("#menu_21").removeClass("hidden");
+            // $("#menu_21").removeClass("hidden");
         }
     }
 };

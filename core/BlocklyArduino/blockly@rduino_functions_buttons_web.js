@@ -105,7 +105,7 @@ BlocklyDuino.load = function(event) {
             if (count && confirm(MSG['xmlLoad'])) {
                 BlocklyDuino.workspace.clear();
             }
-            $('#tab_blocks a').tab('show');
+            // $('#tab_blocks a').tab('show');
             Blockly.Xml.domToWorkspace(xml, BlocklyDuino.workspace);
             BlocklyDuino.selectedTab = 'blocks';
             BlocklyDuino.renderContent();
