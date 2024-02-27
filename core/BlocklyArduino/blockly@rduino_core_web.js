@@ -816,7 +816,7 @@ BlocklyDuino.init = function() {
 
     $("#menuPanel").css({ "display": "" });
     // minimize div
-    $("#divTabpanel").css({ "margin-left": "205px" });
+    $("#divTabpanel").css({ "margin-left": "5px" });
     // $('#btn_size').attr("title", MSG['btn_size_max']);
     // $('#divTitre').removeClass("hidden");
     $('#div_toolboxes').removeClass("hidden");

@@ -107,14 +107,14 @@ header {
 #main .menu-chks label:hover {
   cursor: pointer;
 }
-/*defined in \css\blockly@rduino.css line 43
+
 #divTitreMenu {
   position: absolute;
   left: 205px;
   width: 100%;
   background: #00969D;  
-}*/
-/* #divTitreMenu_miniCard, #divTitreMenu_menu {
+}
+#divTitreMenu_miniCard, #divTitreMenu_menu {
     display: inline-block;
 }
 #divTitreMenu_menu {
@@ -123,7 +123,7 @@ header {
  
 #divTitreMenu_miniCard {   overflow:auto;
     margin-left: 0px;
-} */
+}
   
 nav li {
   position: relative;

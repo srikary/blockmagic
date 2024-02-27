@@ -44,8 +44,13 @@ html,body {
 	float: left;
 }
 
+#header_titres {
+	margin-left: 5px;
+	position: absolute;
+}
+
 #header_code {
-	margin-left: 205px;
+	margin-left: 5px;
 	margin-bottom: 5px;
 	position: absolute;
 }
@@ -56,9 +61,9 @@ html,body {
 	position: absolute;
 }
 
-/* #divTitre, #divTitreMenu {
+#divTitre, #divTitreMenu {
 	float: left;
-} */
+}
 
 #btn_levels {
 	margin-top: 5px;
@@ -142,7 +147,7 @@ html,body {
 	clear: both;
 	float: left;
 	width: 205px;
-    padding-left: 5px;
+  padding-left: 5px;
 	padding-right: 5px;
 	position: absolute;
 	height: 100%;
@@ -247,7 +252,7 @@ html,body {
 
 .divTabpanel-ver {
     height: 100%;
-	margin-left:205px;
+	margin-left:5px;
 }
 
 /* html[dir="RTL"] .divTabpanel-ver {
@@ -501,6 +506,7 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 .blocklyToolboxDiv {
 	background-color: #FFFFFF !important;
 	box-shadow: 5px 5px 5px grey !important;
+	width: 199px;
 }
 
 .blocklyFlyoutBackground {

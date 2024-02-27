@@ -63,38 +63,60 @@
 <body onload="BlocklyDuino.init()">
     <div class="loading"></div>
     <div id="header">
-        <span id="logo_Titre">
+        <div id="logo_Titre">
             <a href="./index.html">
                 <img id="clearLink" src="media/BlocklyArduino/logo.png" border="0" height="36" onclick="" />
             </a>
-        </span>
-        <span id="divCard">
-            <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
-            <span id="board_select_AIO_off"></span>
-            <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
-                <option value="none">...</option>
-                <optgroup label="Arduino">
-                    <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
-                    <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
-                    <option value="arduino_uno">Arduino/Genuino UNO</option>
-                </optgroup>
-                <optgroup label="ESP">
-                    <option value="esp8266">ESP8266</option>
-                    <option value="esp32">ESP32</option>
-                </optgroup>
-            </select>
-        </span>
-        <span>
-            <button id="btn_wiring" class="btn btn-primary">
-                <span class="fa fa-plug"></span>
-            </button>
-            <button id="btn_factory" class="btn btn-sm btn-primary">
-                <span class="fa fa-industry"> </span>
-            </button>
-            <button id="btn_screenduino" class="btn btn-sm btn-primary">
-                <span class="glyphicon glyphicon-th"> </span>
-            </button>
-        </span>
+        </div>
+        
+        <div id="header_titres">
+            <div id="divCard">
+                <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
+                <span id="board_select_AIO_off"></span>
+                <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
+                    <option value="none">...</option>
+                    <optgroup label="Arduino">
+                        <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
+                        <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
+                        <option value="arduino_uno">Arduino/Genuino UNO</option>
+                    </optgroup>
+                    <optgroup label="ESP">
+                        <option value="esp8266">ESP8266</option>
+                        <option value="esp32">ESP32</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <button id="btn_wiring" class="btn btn-primary">
+                    <span class="fa fa-plug"></span>
+                </button>
+                <button id="btn_factory" class="btn btn-sm btn-primary">
+                    <span class="fa fa-industry"> </span>
+                </button>
+                <button id="btn_screenduino" class="btn btn-sm btn-primary">
+                    <span class="glyphicon glyphicon-th"> </span>
+                </button>
+            </div>
+            <div id="divTitreMenu">
+                <div id="divTitreMenu_menu">
+                    <nav id="nav_hor">
+                        <ul id="main-menu">
+                            <li>
+                                <a><i class="fa fa-user"></i> <span id="span_menu_1"> </span> <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#" id="menu_11"> <span id="span_menu_11"> </span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="menu_12"> <span id="span_menu_12"> </span> </a>
+                                    </li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
         <!-- <div id="header_titres">
             <div id="divTitreMenu">
                 <div id="divTitreMenu_menu">
@@ -301,8 +323,8 @@
         </div>
     </div>
     <div id="divBody">
-        <div id="menuPanel">
-            <div id="menuPanelConfig">
+        <!-- <div id="menuPanel"> -->
+            <!-- <div id="menuPanelConfig"> -->
                 <!-- <div id="divCard">
                     <br />
                     <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
@@ -325,11 +347,11 @@
                         <span class="glyphicon glyphicon-alert"> </span>
                         <span id="configGlobalLabel"> </span>
                     </button> -->
-                <div id="div_miniPicture">
+                <!-- <div id="div_miniPicture">
                     <a id="miniCard">
                         <img id="arduino_card_miniPicture" />
                     </a>
-                </div>
+                </div> -->
                 <!-- <button id="btn_config" class="btn btn-sm btn-warning btn-block " data-toggle="modal" data-target="#configModal">
                         <span class="fa fa-cogs"> </span>
                         <span id="span_config"> </span>
@@ -338,7 +360,7 @@
                     <span class="glyphicon glyphicon-th-list"> </span>
                     <span id="span_config_kit"> </span>
                 </a> -->
-            </div>
+            <!-- </div> -->
             <!-- <div id="menuPanelBlockly" class="margin-top-5">
                 <ul id="ul_nav" role="tablist">
                     <li role="presentation" id="tab_supervision" class="disabled">
@@ -362,7 +384,7 @@
                     </li>
                 </ul>
             </div> -->
-            <div id="menuPanelFiles">
+            <!-- <div id="menuPanelFiles">
                 <a id="btn_saveXML" class='btn btn-sm btn-success btn-block' href="#" role='button'>
                     <span class="fas fa-cloud-download-alt"></span>
                     <span id="span_saveXML"> </span>
@@ -370,7 +392,7 @@
                 <button id="btn_fakeload" class="btn btn-sm btn-success btn-block" accept="*.B@, *.xml">
                         <span class="fas fa-cloud-upload-alt"></span>
                         <span id="span_fakeload"> </span>
-                    </button>
+                    </button> -->
                 <!-- <button id="btn_example" class="btn btn-sm btn-info btn-block" data-toggle="modal" data-target="#exampleModal">
                         <span class="glyphicon glyphicon-list-alt"> </span>
                         <span id="span_example"> </span>
@@ -379,7 +401,7 @@
                     <span class="glyphicon glyphicon-wrench"> </span>
                     <span id="span_create_example"> </span>
                 </a> -->
-            </div>
+            <!-- </div> -->
             <input type="file" id="load" accept=".B@, .xml" style="display: none;" />
             <!-- <div id="div_tools_button">
                 
@@ -415,7 +437,7 @@
                         </button>
                 </div>
             </div> -->
-        </div>
+        <!-- </div> -->
         <!-- Nav tabs -->
         <div id="divTabpanel" role="tabpanel">
             <!-- Tab panes -->
