@@ -46,7 +46,11 @@ html,body {
 
 #header_titres {
 	margin-left: 5px;
-	position: absolute;
+	/* height: 36px; */
+	/* position: absolute; */
+	/* display: flex;
+  align-items: center;
+  height: 100%; Or any specific height */
 }
 
 #header_code {

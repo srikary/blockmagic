@@ -70,33 +70,6 @@
         </div>
         
         <div id="header_titres">
-            <div id="divCard">
-                <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
-                <span id="board_select_AIO_off"></span>
-                <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
-                    <option value="none">...</option>
-                    <optgroup label="Arduino">
-                        <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
-                        <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
-                        <option value="arduino_uno">Arduino/Genuino UNO</option>
-                    </optgroup>
-                    <optgroup label="ESP">
-                        <option value="esp8266">ESP8266</option>
-                        <option value="esp32">ESP32</option>
-                    </optgroup>
-                </select>
-            </div>
-            <div>
-                <button id="btn_wiring" class="btn btn-primary">
-                    <span class="fa fa-plug"></span>
-                </button>
-                <button id="btn_factory" class="btn btn-sm btn-primary">
-                    <span class="fa fa-industry"> </span>
-                </button>
-                <button id="btn_screenduino" class="btn btn-sm btn-primary">
-                    <span class="glyphicon glyphicon-th"> </span>
-                </button>
-            </div>
             <div id="divTitreMenu">
                 <div id="divTitreMenu_menu">
                     <nav id="nav_hor">
@@ -114,6 +87,51 @@
                             </li> 
                         </ul>
                     </nav>
+                </div>
+            </div>
+            <div id="divCard" style="padding-left: 10px; display: inline-block;  margin-top: 5px; margin-right: 10px;">
+                <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
+                <span id="board_select_AIO_off"></span>
+                <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
+                    <option value="none">...</option>
+                    <optgroup label="Arduino">
+                        <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>
+                        <option value="arduino_nano">Arduino/Genuino NANO ATmega328</option>
+                        <option value="arduino_uno">Arduino/Genuino UNO</option>
+                    </optgroup>
+                    <optgroup label="ESP">
+                        <option value="esp8266">ESP8266</option>
+                        <option value="esp32">ESP32</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div style="padding-left: 10px; display: inline-block;  margin-top: 5px; margin-right: 10px;">
+                <button id="btn_wiring" class="btn btn-primary">
+                    <span class="fa fa-plug"></span>
+                </button>
+                <button id="btn_factory" class="btn btn-sm btn-primary">
+                    <span class="fa fa-industry"> </span>
+                </button>
+                <button id="btn_screenduino" class="btn btn-sm btn-primary">
+                    <span class="glyphicon glyphicon-th"> </span>
+                </button>
+            </div>
+            <div id="tools_blocks" class="tab-pane active">
+                <button id="btn_undo" class="btn btn-default">
+                        <span class="fa fa-undo"> </span>
+                    </button>
+                <button id="btn_redo" class="btn btn-default">
+                        <span class="fa fa-repeat"> </span>
+                    </button>
+                <button id="btn_preview" class="btn btn-default">
+                        <span id="icon_btn_preview" class="glyphicon glyphicon-sunglasses"> </span>
+                    </button>
+               
+                <div id="toggle_code" class="modal-content" style="display: none;">
+                    <pre id="pre_previewArduino" title="Code"></pre>
+                    <button id="btn_CopyCode" class="btn btn-warning" data-clipboard-action="copy" data-clipboard-target="#pre_previewArduino">
+                            <span class="glyphicon glyphicon-duplicate"> </span>
+                        </button>
                 </div>
             </div>
         </div>
@@ -285,42 +303,6 @@
                 </a>
             </div> -->
         <!-- </div> -->
-
-        <div id="tools_blocks" class="tab-pane active">
-            <button id="btn_undo" class="btn btn-default">
-                    <span class="fa fa-undo"> </span>
-                </button>
-            <button id="btn_redo" class="btn btn-default">
-                    <span class="fa fa-repeat"> </span>
-                </button>
-            <!-- <button id="btn_block_capture" class="btn btn-default">
-                    <span id="icon_btn_block_capture" class="glyphicon glyphicon-camera"> </span>
-                </button> -->
-            <!-- <button id="btn_blocs_picture_mini" class="btn btn-default">
-                    <span id="icon_btn_blocs_picture_mini" class="glyphicon glyphicon-zoom-out"> </span>
-                </button>
-            <button id="btn_blocs_picture_maxi" class="btn btn-default">
-                    <span id="icon_btn_blocs_picture_maxi" class="glyphicon glyphicon-zoom-in"> </span>
-                </button>
-            <button id="btn_blocs_picture" class="btn btn-default">
-                    <span id="icon_btn_blocs_picture" class="glyphicon glyphicon-eye-open"> </span>
-                </button> -->
-            <button id="btn_preview" class="btn btn-default">
-                    <span id="icon_btn_preview" class="glyphicon glyphicon-sunglasses"> </span>
-                </button>
-            <!-- <button id="btn_inline" class="btn btn-default">
-                    <span id="icon_btn_inline" class="glyphicon glyphicon-option-vertical"> </span>
-                </button> -->
-            <!-- <button id="btn_size" class="btn btn-default">
-                    <span id="icon_btn_size" class="glyphicon"> </span>
-                </button> -->
-            <div id="toggle_code" class="modal-content" style="display: none;">
-                <pre id="pre_previewArduino" title="Code"></pre>
-                <button id="btn_CopyCode" class="btn btn-warning" data-clipboard-action="copy" data-clipboard-target="#pre_previewArduino">
-                        <span class="glyphicon glyphicon-duplicate"> </span>
-                    </button>
-            </div>
-        </div>
     </div>
     <div id="divBody">
         <!-- <div id="menuPanel"> -->

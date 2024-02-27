@@ -109,13 +109,14 @@ header {
 }
 
 #divTitreMenu {
-  position: absolute;
-  left: 205px;
-  width: 100%;
+  /* position: absolute;
+  left: 205px; */
+  /* width: 150px; */
   background: #00969D;  
 }
 #divTitreMenu_miniCard, #divTitreMenu_menu {
     display: inline-block;
+    vertical-align: middle;
 }
 #divTitreMenu_menu {
 	float: left;
