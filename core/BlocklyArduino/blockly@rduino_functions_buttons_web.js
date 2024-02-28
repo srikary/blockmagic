@@ -20,29 +20,29 @@ BlocklyDuino.editArduinoCode = function() {
 BlocklyDuino.saveXmlFile = function() {
     var xml = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
 
-    var toolbox = sessionStorage.getItem('toolbox');
-    if (!toolbox) {
-        toolbox = $("#toolboxes").val();
-    }
+    // var toolbox = sessionStorage.getItem('toolbox');
+    // if (!toolbox) {
+    //     toolbox = $("#toolboxes").val();
+    // }
 
-    if (toolbox) {
-        var newel = document.createElement("toolbox");
-        newel.appendChild(document.createTextNode(toolbox));
-        xml.insertBefore(newel, xml.childNodes[0]);
-    }
+    // if (toolbox) {
+    //     var newel = document.createElement("toolbox");
+    //     newel.appendChild(document.createTextNode(toolbox));
+    //     xml.insertBefore(newel, xml.childNodes[0]);
+    // }
 
-    var toolboxids = sessionStorage.getItem('toolboxids');
-    if (toolboxids === undefined || toolboxids === "") {
-        if ($('#defaultCategories').length) {
-            toolboxids = $('#defaultCategories').html();
-        }
-    }
+    // var toolboxids = sessionStorage.getItem('toolboxids');
+    // if (toolboxids === undefined || toolboxids === "") {
+    //     if ($('#defaultCategories').length) {
+    //         toolboxids = $('#defaultCategories').html();
+    //     }
+    // }
 
-    if (toolboxids) {
-        var newel = document.createElement("toolboxcategories");
-        newel.appendChild(document.createTextNode(toolboxids));
-        xml.insertBefore(newel, xml.childNodes[0]);
-    }
+    // if (toolboxids) {
+    //     var newel = document.createElement("toolboxcategories");
+    //     newel.appendChild(document.createTextNode(toolboxids));
+    //     xml.insertBefore(newel, xml.childNodes[0]);
+    // }
 
     var data = Blockly.Xml.domToPrettyText(xml);
     var datenow = Date.now();

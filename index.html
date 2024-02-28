@@ -92,7 +92,7 @@
             <div id="divCard" style="padding-left: 10px; display: inline-block;  margin-top: 5px; margin-right: 10px;">
                 <span class="fa fa-microchip"></span> <label id="labelArduinoCard"></label>
                 <span id="board_select_AIO_off"></span>
-                <select id="board_select" onmousemove="BlocklyDuino.cardPicture_change_AIO()" onchange="BlocklyDuino.cardPicture_change_AIO()">
+                <select id="board_select" onchange="BlocklyDuino.validateConfigGlobal()">
                     <option value="none">...</option>
                     <optgroup label="Arduino">
                         <option value="arduino_leonardo">Arduino/Genuino LEONARDO</option>

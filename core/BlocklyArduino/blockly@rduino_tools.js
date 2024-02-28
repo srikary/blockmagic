@@ -76,26 +76,26 @@ BlocklyDuino.validateConfigGlobal = function() {
     }
 
     //change language
-    var languageMenuSelected = $('#languageMenu option:selected').val();
-    var newLang = encodeURIComponent(languageMenuSelected);
-    if (search.length <= 1) {
-        search = '?lang=' + newLang;
-    } else if (search.match(/[?&]lang=[^&]*/)) {
-        //en mode AIO sans languageMenu on ne fait rien pour le choix des langues
-        if ((newLang == 'undefined') || (newLang == "")) search = search;
-        else search = search.replace(/([?&]lang=)[^&]*/, '$1' + newLang);
-    } else {
-        search = search.replace(/\?/, '?lang=' + newLang + '&');
-    }
+    // var languageMenuSelected = $('#languageMenu option:selected').val();
+    // var newLang = encodeURIComponent(languageMenuSelected);
+    // if (search.length <= 1) {
+    //     search = '?lang=' + newLang;
+    // } else if (search.match(/[?&]lang=[^&]*/)) {
+    //     //en mode AIO sans languageMenu on ne fait rien pour le choix des langues
+    //     if ((newLang == 'undefined') || (newLang == "")) search = search;
+    //     else search = search.replace(/([?&]lang=)[^&]*/, '$1' + newLang);
+    // } else {
+    //     search = search.replace(/\?/, '?lang=' + newLang + '&');
+    // }
 
-    var fontChoiced = BlocklyDuino.changeFont();
-    if (search.length <= 1) {
-        search = '?font=' + fontChoiced;
-    } else if (search.match(/[?&]font=[^&]*/)) {
-        search = search.replace(/([?&]font=)[^&]*/, '$1' + fontChoiced);
-    } else {
-        search = search.replace(/\?/, '?font=' + fontChoiced + '&');
-    }
+    // var fontChoiced = BlocklyDuino.changeFont();
+    // if (search.length <= 1) {
+    //     search = '?font=' + fontChoiced;
+    // } else if (search.match(/[?&]font=[^&]*/)) {
+    //     search = search.replace(/([?&]font=)[^&]*/, '$1' + fontChoiced);
+    // } else {
+    //     search = search.replace(/\?/, '?font=' + fontChoiced + '&');
+    // }
 
     sessionStorage.setItem('ConfigGlobaleSeen', 'ok');
     window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;

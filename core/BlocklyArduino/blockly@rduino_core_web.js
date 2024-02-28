@@ -36,7 +36,7 @@ var BlocklyLevel = 'none';
  */
 BlocklyDuino.renderContent = function() {
     var content = $('#content_' + BlocklyDuino.selectedTab);
-    if (content.prop('id') == 'content_blocks') {
+    // if (content.prop('id') == 'content_blocks') {
         // If the workspace was changed by the XML tab, Firefox will have
         // performed an incomplete rendering due to Blockly being invisible. Rerender.
         BlocklyDuino.workspace.render();
@@ -46,8 +46,8 @@ BlocklyDuino.renderContent = function() {
         $("#btn_levels").show();
         $("#header_supervision").hide();
         $("#header_code").hide();
-    } else {
-        switch (content.prop('id')) {
+    // } else {
+    //     switch (content.prop('id')) {
             // case 'content_xml':
             // $(".blocklyToolboxDiv").hide();
             // $('#pre_xml').text(Blockly.Xml.domToPrettyText(Blockly.Xml.workspaceToDom(BlocklyDuino.workspace)));
@@ -57,24 +57,24 @@ BlocklyDuino.renderContent = function() {
             // $("#tools_blocks").hide();
             // break;
 
-            case 'content_arduino':
-                $(".blocklyToolboxDiv").hide();
-                try {
-                    var cardId = BlocklyDuino.getStringParamFromUrl('card', '');
-                    if (cardId != 'kit_microbit') $('#pre_Arduino').text(Blockly.Arduino.workspaceToCode(BlocklyDuino.workspace));
-                    else $('#pre_Arduino').text(Blockly.Python.workspaceToCode(BlocklyDuino.workspace));
-                    if (typeof prettyPrintOne == 'function') {
-                        $('#pre_arduino').html(prettyPrintOne($('#pre_arduino').html(), 'cpp'));
-                    }
-                    BlocklyDuino.toggleFunctionsChoice();
-                } catch (e) {
-                    alert(e);
-                }
-                $("#tools_blocks").hide();
-                $("#btn_levels").hide();
-                $("#header_supervision").hide();
-                $("#header_code").show();
-                break;
+            // case 'content_arduino':
+            //     $(".blocklyToolboxDiv").hide();
+            //     try {
+            //         var cardId = BlocklyDuino.getStringParamFromUrl('card', '');
+            //         if (cardId != 'kit_microbit') $('#pre_Arduino').text(Blockly.Arduino.workspaceToCode(BlocklyDuino.workspace));
+            //         else $('#pre_Arduino').text(Blockly.Python.workspaceToCode(BlocklyDuino.workspace));
+            //         if (typeof prettyPrintOne == 'function') {
+            //             $('#pre_arduino').html(prettyPrintOne($('#pre_arduino').html(), 'cpp'));
+            //         }
+            //         BlocklyDuino.toggleFunctionsChoice();
+            //     } catch (e) {
+            //         alert(e);
+            //     }
+            //     $("#tools_blocks").hide();
+            //     $("#btn_levels").hide();
+            //     $("#header_supervision").hide();
+            //     $("#header_code").show();
+            //     break;
 
                 //case 'content_supervision':
                 //$("#content_supervision").load('./tools/supervision/pymata_arduino.html', BlocklyDuino.renderSupervisionContent);
@@ -82,77 +82,77 @@ BlocklyDuino.renderContent = function() {
                 //$("#btn_levels").hide();
                 //$("#header_supervision").show();
                 //$("#header_code").hide();
-        }
-    }
+    //     }
+    // }
 };
 
 /**
  * Render block factory
  */
-BlocklyDuino.renderArduinoCodePreview = function() {
-    var cardId = BlocklyDuino.getStringParamFromUrl('card', '');
-    if (cardId != 'kit_microbit') {
-        $('#pre_previewArduino').text(Blockly.Arduino.workspaceToCode(BlocklyDuino.workspace));
-        $('#pre_arduino').text(Blockly.Arduino.workspaceToCode(BlocklyDuino.workspace));
-    } else {
-        $('#pre_previewArduino').text(Blockly.Python.workspaceToCode(BlocklyDuino.workspace));
-        $('#pre_arduino').text(Blockly.Python.workspaceToCode(BlocklyDuino.workspace));
-    }
-    if (typeof prettyPrintOne == 'function') {
-        $('#pre_previewArduino').html(prettyPrintOne($('#pre_previewArduino').html(), 'cpp'));
-        $('#pre_arduino').html(prettyPrintOne($('#pre_previewArduino').html(), 'cpp'));
-    }
-};
+// BlocklyDuino.renderArduinoCodePreview = function() {
+//     var cardId = BlocklyDuino.getStringParamFromUrl('card', '');
+//     if (cardId != 'kit_microbit') {
+//         $('#pre_previewArduino').text(Blockly.Arduino.workspaceToCode(BlocklyDuino.workspace));
+//         $('#pre_arduino').text(Blockly.Arduino.workspaceToCode(BlocklyDuino.workspace));
+//     } else {
+//         $('#pre_previewArduino').text(Blockly.Python.workspaceToCode(BlocklyDuino.workspace));
+//         $('#pre_arduino').text(Blockly.Python.workspaceToCode(BlocklyDuino.workspace));
+//     }
+//     if (typeof prettyPrintOne == 'function') {
+//         $('#pre_previewArduino').html(prettyPrintOne($('#pre_previewArduino').html(), 'cpp'));
+//         $('#pre_arduino').html(prettyPrintOne($('#pre_previewArduino').html(), 'cpp'));
+//     }
+// };
 
 /**
  * Populate the supervision tabs with selected card
  */
-BlocklyDuino.renderSupervisionContent = function() {
-    // tabs-1
-    var pinTemplate1 = $("#template_tabs1").html();
-    var digitalNumbers = window.profile["defaultBoard"].digital;
-    for (var i in digitalNumbers) {
-        var pinLine = pinTemplate1.replace(/#pin_number#/g, digitalNumbers[i]);
-        $("#tabs-1").append(pinLine);
-    }
+// BlocklyDuino.renderSupervisionContent = function() {
+//     // tabs-1
+//     var pinTemplate1 = $("#template_tabs1").html();
+//     var digitalNumbers = window.profile["defaultBoard"].digital;
+//     for (var i in digitalNumbers) {
+//         var pinLine = pinTemplate1.replace(/#pin_number#/g, digitalNumbers[i]);
+//         $("#tabs-1").append(pinLine);
+//     }
 
-    // tabs-2
-    var pinTemplate2 = $("#template_tabs2").html();
-    var pwmTemplate = $("#template_tabs2_pwm").html();
-    var pwmNumbers = window.profile["defaultBoard"].PWM;
-    for (var i in digitalNumbers) {
-        var pinLine = pinTemplate2;
-        if ($.inArray(digitalNumbers[i], pwmNumbers) != -1) {
-            pinLine = pinLine.replace("#pwm_line#", pwmTemplate);
-        } else {
-            pinLine = pinLine.replace("#pwm_line#", "");
-        }
-        pinLine = pinLine.replace(/#pin_number#/g, digitalNumbers[i]);
-        $("#tabs-2").append(pinLine);
-    }
+//     // tabs-2
+//     var pinTemplate2 = $("#template_tabs2").html();
+//     var pwmTemplate = $("#template_tabs2_pwm").html();
+//     var pwmNumbers = window.profile["defaultBoard"].PWM;
+//     for (var i in digitalNumbers) {
+//         var pinLine = pinTemplate2;
+//         if ($.inArray(digitalNumbers[i], pwmNumbers) != -1) {
+//             pinLine = pinLine.replace("#pwm_line#", pwmTemplate);
+//         } else {
+//             pinLine = pinLine.replace("#pwm_line#", "");
+//         }
+//         pinLine = pinLine.replace(/#pin_number#/g, digitalNumbers[i]);
+//         $("#tabs-2").append(pinLine);
+//     }
 
-    // tabs-3
-    var pinTemplate3 = $("#template_tabs3").html();
-    var analogNumbers3 = window.profile["defaultBoard"].analog;
-    for (var i in analogNumbers3) {
-        var pinNumber = analogNumbers3[i].substring(1);
-        var pinLine = pinTemplate3.replace(/#pin_number#/g, pinNumber);
-        $("#tabs-3").append(pinLine);
-    }
+//     // tabs-3
+//     var pinTemplate3 = $("#template_tabs3").html();
+//     var analogNumbers3 = window.profile["defaultBoard"].analog;
+//     for (var i in analogNumbers3) {
+//         var pinNumber = analogNumbers3[i].substring(1);
+//         var pinLine = pinTemplate3.replace(/#pin_number#/g, pinNumber);
+//         $("#tabs-3").append(pinLine);
+//     }
 
-    // tabs-4
-    var pinTemplate4 = $("#template_tabs4").html();
-    var analogNumbers4 = window.profile["defaultBoard"].analog;
-    for (var i in analogNumbers4) {
-        var pinNumber = analogNumbers4[i].substring(1);
-        var pinLine = pinTemplate4.replace(/#pin_number#/g, pinNumber);
-        $("#tabs-4").append(pinLine);
-    }
+//     // tabs-4
+//     var pinTemplate4 = $("#template_tabs4").html();
+//     var analogNumbers4 = window.profile["defaultBoard"].analog;
+//     for (var i in analogNumbers4) {
+//         var pinNumber = analogNumbers4[i].substring(1);
+//         var pinLine = pinTemplate4.replace(/#pin_number#/g, pinNumber);
+//         $("#tabs-4").append(pinLine);
+//     }
 
-    // Code.initLanguageSupervision();
-    jscolor.installByClassName("jscolor");
-    $.getScript("./tools/supervision/s2aio_iot.js");
-};
+//     // Code.initLanguageSupervision();
+//     jscolor.installByClassName("jscolor");
+//     $.getScript("./tools/supervision/s2aio_iot.js");
+// };
 
 /**
  * Populate the content arduino code pane with the edit textarea "edit_code"
@@ -168,9 +168,6 @@ BlocklyDuino.renderSupervisionContent = function() {
 //     }
 // };
 
-/**
- * Render Arduino code in preview box
- */
 BlocklyDuino.renderArduinoCodePreview = function() {
     var cardId = BlocklyDuino.getStringParamFromUrl('card', '');
     if (cardId != 'kit_microbit') {
@@ -355,7 +352,7 @@ BlocklyDuino.bindFunctions = function() {
     });
 
     //menu déroulant
-    $('#toolboxes, #toggle-Functions').on("change", BlocklyDuino.changeToolboxDefinition);
+    // $('#toolboxes, #toggle-Functions').on("change", BlocklyDuino.changeToolboxDefinition);
     // $('#toolboxes').on("change", BlocklyDuino.changeToolboxDefinition);
 
     //bouton de niveaux
@@ -412,9 +409,9 @@ BlocklyDuino.bindFunctions = function() {
 
     // $('#btn_edit_code').on("click", BlocklyDuino.editArduinoCode);
 
-    $('#select_all').on("click", BlocklyDuino.checkAll);
-    $('#btn_valid_config').on("click", BlocklyDuino.changeToolbox);
-    $('#btn_validConfigGlobale').on("click", BlocklyDuino.validateConfigGlobal);
+    // $('#select_all').on("click", BlocklyDuino.checkAll);
+    // $('#btn_valid_config').on("click", BlocklyDuino.changeToolbox);
+    // $('#btn_validConfigGlobale').on("click", BlocklyDuino.validateConfigGlobal);
     $('#btn_card_picture_change').on("click", BlocklyDuino.validateConfigOffline);
     $('#textSize').on("click", BlocklyDuino.tailleFonte);
 
@@ -585,135 +582,126 @@ BlocklyDuino.bindFunctions = function() {
 /**
  * checks all checkboxes in modal "configModal"
  */
-BlocklyDuino.checkAll = function() {
-    if (this.checked) {
-        // Iterate each checkbox
-        $('#modal-body-config input:checkbox[id^=checkbox_]').each(function() {
-            this.checked = true;
-        });
-    } else {
-        $('#modal-body-config input:checkbox[id^=checkbox_]').each(function() {
-            this.checked = false;
-        });
-    }
-};
+// BlocklyDuino.checkAll = function() {
+//     if (this.checked) {
+//         // Iterate each checkbox
+//         $('#modal-body-config input:checkbox[id^=checkbox_]').each(function() {
+//             this.checked = true;
+//         });
+//     } else {
+//         $('#modal-body-config input:checkbox[id^=checkbox_]').each(function() {
+//             this.checked = false;
+//         });
+//     }
+// };
 
 /**
  * Build modal to configure ToolBox
  */
-BlocklyDuino.openConfigToolbox = function() {
+// BlocklyDuino.openConfigToolbox = function() {
 
-    var modalbody = $("#modal-body-config");
+//     var modalbody = $("#modal-body-config");
 
-    // load the toolboxes id's stored in session
-    var loadIds = sessionStorage.getItem('toolboxids');
+//     // load the toolboxes id's stored in session
+//     var loadIds = sessionStorage.getItem('toolboxids');
 
-    // set the default toolbox if none
-    if (loadIds === undefined || loadIds === "") {
-        if ($('#defaultCategories').length) {
-            loadIds = $('#defaultCategories').html();
-        } else {
-            loadIds = '';
-        }
-    }
+//     // set the default toolbox if none
+//     if (loadIds === undefined || loadIds === "") {
+//         if ($('#defaultCategories').length) {
+//             loadIds = $('#defaultCategories').html();
+//         } else {
+//             loadIds = '';
+//         }
+//     }
 
-    if (!BlocklyDuino.ajaxOK || BlocklyDuino.toolboxInIndexHtml) {
-        $('#divToolbox').hide();
-    }
+//     if (!BlocklyDuino.ajaxOK || BlocklyDuino.toolboxInIndexHtml) {
+//         $('#divToolbox').hide();
+//     }
 
-    // clear modal
-    modalbody.empty();
-    var i = 0,
-        n;
-    var ligne = "";
-    // create a checkbox for each toolbox category
-    $("#toolbox").children("category").each(function() {
-        n = loadIds.search($(this).attr("id"));
-        // checks if toolbox was already chosen
-        if (n >= 0) {
-            ligne = '<input type="checkbox" checked="checked" name="checkbox_' +
-                i + '" id="checkbox_' + $(this).attr("id") + '"/> ' +
-                Blockly.Msg[$(this).attr("id")] + '<br/>';
-        } else {
-            ligne = '<input type="checkbox" name="checkbox_' + i +
-                '" id="checkbox_' + $(this).attr("id") + '"/> ' +
-                Blockly.Msg[$(this).attr("id")] + '<br/>';
-        }
-        i++;
-        modalbody.append(ligne);
-    });
-};
+//     // clear modal
+//     modalbody.empty();
+//     var i = 0,
+//         n;
+//     var ligne = "";
+//     // create a checkbox for each toolbox category
+//     $("#toolbox").children("category").each(function() {
+//         n = loadIds.search($(this).attr("id"));
+//         // checks if toolbox was already chosen
+//         if (n >= 0) {
+//             ligne = '<input type="checkbox" checked="checked" name="checkbox_' +
+//                 i + '" id="checkbox_' + $(this).attr("id") + '"/> ' +
+//                 Blockly.Msg[$(this).attr("id")] + '<br/>';
+//         } else {
+//             ligne = '<input type="checkbox" name="checkbox_' + i +
+//                 '" id="checkbox_' + $(this).attr("id") + '"/> ' +
+//                 Blockly.Msg[$(this).attr("id")] + '<br/>';
+//         }
+//         i++;
+//         modalbody.append(ligne);
+//     });
+// };
 
 /**
  * Change the ToolBox following the chosen configuration in the modal
  */
-BlocklyDuino.changeToolbox = function() {
-    // Store the blocks for the duration of the reload.
-    BlocklyDuino.backupBlocks();
+// BlocklyDuino.changeToolbox = function() {
+//     // Store the blocks for the duration of the reload.
+//     BlocklyDuino.backupBlocks();
 
-    // read the toolboxes id's from the checkboxes
-    var toolboxIds = [];
-    $('#modal-body-config input:checkbox[id^=checkbox_]').each(function() {
-        if (this.checked == true) {
-            var xmlid = this.id;
-            toolboxIds.push(xmlid.replace("checkbox_", ""));
-        }
-    });
+//     console.log("Srikar: changeToolbox invoked");
+//     // read the toolboxes id's from the checkboxes
+//     var toolboxIds = [];
+//     $('#modal-body-config input:checkbox[id^=checkbox_]').each(function() {
+//         if (this.checked == true) {
+//             var xmlid = this.id;
+//             toolboxIds.push(xmlid.replace("checkbox_", ""));
+//         }
+//     });
 
-    // store id's in session
-    sessionStorage.setItem('toolboxids', toolboxIds);
+//     // store id's in session
+//     sessionStorage.setItem('toolboxids', toolboxIds);
 
-    var search = window.location.search;
-    // put id's in url
-    search = BlocklyDuino.addReplaceParamToUrl(search, 'toolboxids', toolboxIds);
+//     var search = window.location.search;
+//     // put id's in url
+//     search = BlocklyDuino.addReplaceParamToUrl(search, 'toolboxids', toolboxIds);
 
-    // store toolboxe id in session
-    sessionStorage.setItem('toolbox', $("#toolboxes").val());
+//     // store toolboxe id in session
+//     sessionStorage.setItem('toolbox', $("#toolboxes").val());
 
-    search = BlocklyDuino.addReplaceParamToUrl(search, 'toolbox', $("#toolboxes").val());
+//     search = BlocklyDuino.addReplaceParamToUrl(search, 'toolbox', $("#toolboxes").val());
 
-    BlocklyDuino.toggleFunctionsChoice();
+//     BlocklyDuino.toggleFunctionsChoice();
 
-    // remove values from url to test toggles
-    search = search.replace(/([?&]sortby=)[^&]*/, '');
-    // put values in url
-    if (search.length <= 1) {
-        search = '?sortby=' + sessionStorage.getItem('catblocsort');
-    } else {
-        search = search + '&sortby=' + sessionStorage.getItem('catblocsort');
-    }
+//     // remove values from url to test toggles
+//     search = search.replace(/([?&]sortby=)[^&]*/, '');
+//     // put values in url
+//     if (search.length <= 1) {
+//         search = '?sortby=' + sessionStorage.getItem('catblocsort');
+//     } else {
+//         search = search + '&sortby=' + sessionStorage.getItem('catblocsort');
+//     }
 
-    window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;
-};
+//     window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;
+// };
 
 /**
  * Build the xml using toolboxes checked in config modal and stored in session
  */
 BlocklyDuino.buildToolbox = function() {
     // set the toolbox from url parameters
-    var loadIds = BlocklyDuino.getStringParamFromUrl('toolboxids', '');
-    var kitURL = BlocklyDuino.getStringParamFromUrl('card', '');
+    var toolboxIds = [];
 
-    // set the toolbox from local storage
-    if (loadIds === undefined || loadIds === "") {
-        loadIds = sessionStorage.getItem('toolboxids');
-    }
+    $("#toolbox").children("category").each(function() {
+        toolboxIds.push($(this).attr("id"));
+    });
 
-    // set the default toolbox if none
-    if (loadIds === undefined || loadIds === "" || loadIds === null || kitURL.startsWith('kit')) {
-        if ($('#defaultCategories').length) {
-            loadIds = $('#defaultCategories').html();
-        } else {
-            loadIds = '';
-        }
-    }
-    sessionStorage.setItem('toolboxids', loadIds);
+    // sessionStorage.setItem('toolboxids', loadIds);
 
     var xmlValue = '<xml id="toolbox">';
-    var xmlids = loadIds.split(",");
-    for (var i = 0; i < xmlids.length; i++) {
-        if ($('#' + xmlids[i]).length) {
-            xmlValue += $('#' + xmlids[i])[0].outerHTML;
+    // var xmlids = loadIds.split(",");
+    for (var i = 0; i < toolboxIds.length; i++) {
+        if ($('#' + toolboxIds[i]).length) {
+            xmlValue += $('#' + toolboxIds[i])[0].outerHTML;
         }
     }
 
@@ -725,7 +713,7 @@ BlocklyDuino.buildToolbox = function() {
 /**
  * load the xml toolbox definition
  */
-BlocklyDuino.loadToolboxDefinition = function(toolboxFile) {
+BlocklyDuino.loadToolboxDefinition = function() {
     // if (!toolboxFile) {
     //     toolboxFile = BlocklyDuino.getStringParamFromUrl('toolbox', '');
     // }
@@ -735,7 +723,7 @@ BlocklyDuino.loadToolboxDefinition = function(toolboxFile) {
     // if (!toolboxFile) {
     //     toolboxFile = BlocklyDuino.selectedToolbox;
     // }
-    toolboxFile = "toolbox_arduino_all"
+    var toolboxFile = "toolbox_arduino_all"
 
     $("#toolboxes").val(toolboxFile);
     // update buttons levels
@@ -780,15 +768,15 @@ BlocklyDuino.loadToolboxDefinition = function(toolboxFile) {
 /**
  * Change toolbox definition
  */
-BlocklyDuino.changeToolboxDefinition = function() {
-    BlocklyDuino.loadToolboxDefinition($("#toolboxes").val());
-    BlocklyDuino.openConfigToolbox();
-};
+// BlocklyDuino.changeToolboxDefinition = function() {
+//     BlocklyDuino.loadToolboxDefinition($("#toolboxes").val());
+//     BlocklyDuino.openConfigToolbox();
+// };
 
-BlocklyDuino.changeLevelToolboxDefinition = function(level) {
-    BlocklyDuino.loadToolboxDefinition(level);
-    BlocklyDuino.openConfigToolbox();
-};
+// BlocklyDuino.changeLevelToolboxDefinition = function(level) {
+//     BlocklyDuino.loadToolboxDefinition(level);
+//     BlocklyDuino.openConfigToolbox();
+// };
 
 
 /**
@@ -803,18 +791,19 @@ BlocklyDuino.init = function() {
     // BlocklyDuino.changeFontURL();
     document.body.style.fontFamily = "OpenDyslexic";
 
-    if ($('#toolbox').length) {
-        BlocklyDuino.toolboxInIndexHtml = true;
-    }
+    BlocklyDuino.loadToolboxDefinition();
+    // if ($('#toolbox').length) {
+    //     BlocklyDuino.toolboxInIndexHtml = true;
+    // }
 
-    if (!BlocklyDuino.toolboxInIndexHtml && BlocklyDuino.ajaxOK) {
-        console.log("Srikar: came here I/0")
-        BlocklyDuino.loadToolboxDefinition();
-    }
+    // if (!BlocklyDuino.toolboxInIndexHtml && BlocklyDuino.ajaxOK) {
+    //     console.log("Srikar: came here I/0")
+    //     BlocklyDuino.loadToolboxDefinition();
+    // }
 
     Code.initLanguage();
 
-    $("#menuPanel").css({ "display": "" });
+    // $("#menuPanel").css({ "display": "" });
     // minimize div
     $("#divTabpanel").css({ "margin-left": "5px" });
     // $('#btn_size').attr("title", MSG['btn_size_max']);
