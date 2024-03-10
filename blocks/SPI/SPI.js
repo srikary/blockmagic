@@ -8,10 +8,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.SPI');
+// goog.provide('Blockly.Blocks.SPI');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.SPI_init = {
 	init: function() {

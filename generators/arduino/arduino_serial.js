@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.arduino_serial');
+// goog.provide('Blockly.Arduino.arduino_serial');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['serial_init'] = function() {
   var dropdown_speed = this.getFieldValue('SPEED');

@@ -6,9 +6,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.RTC_DS3231');
+// goog.provide('Blockly.Arduino.RTC_DS3231');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['Init_RTC_ds3231'] = function() {
   //Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>\n';

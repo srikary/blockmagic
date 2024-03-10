@@ -2,10 +2,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.Adafruit_SSD1306');
+// goog.provide('Blockly.Blocks.Adafruit_SSD1306');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Msg.SSD1306_WIDTH = "width, in pixels";
 Blockly.Msg.SSD1306_HEIGHT = "height, in pixels";

@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.dfrobot_ISD1820');
+// goog.provide('Blockly.Arduino.dfrobot_ISD1820');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.dfrobot_ISD1820_record = function() {
 };

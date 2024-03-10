@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.servo');
+// goog.provide('Blockly.Arduino.servo');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.servo_attach = function() {
   var value_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

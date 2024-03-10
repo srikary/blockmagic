@@ -2,9 +2,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.BT_ELEC');
+// goog.provide('Blockly.Arduino.BT_ELEC');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.BT_ELEC_Init = function() {
   var code = '';

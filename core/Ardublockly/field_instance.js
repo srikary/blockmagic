@@ -8,13 +8,13 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldInstance');
+// goog.provide('Blockly.FieldInstance');
 
-goog.require('Blockly.FieldDropdown');
-goog.require('Blockly.Instances');
-goog.require('Blockly.Msg');
-goog.require('Blockly.utils');
-goog.require('goog.string');
+// goog.require('Blockly.FieldDropdown');
+// goog.require('Blockly.Instances');
+// goog.require('Blockly.Msg');
+// goog.require('Blockly.utils');
+// goog.require('goog.string');
 
 
 /**
@@ -46,7 +46,7 @@ Blockly.FieldInstance = function(
   this.editDropdownData = (opt_editDropdownData instanceof Function) ?
       opt_editDropdownData : null;
 };
-goog.inherits(Blockly.FieldInstance, Blockly.FieldDropdown);
+// goog.inherits(Blockly.FieldInstance, Blockly.FieldDropdown);
 
 /**
  * Sets a new change handler for instance field.

@@ -8,8 +8,8 @@
  //cf. http://libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino/creerblocsmultiling/bloccode
 'use strict';
 
-goog.provide('Blockly.Arduino.unipolar_stepper_motor'); //nom du fichier et non de la fonction. on définit encore notre catégorie et dépendances mais cette fois on dit qu'il s'agit de code Arduino : goog.provide('Blockly.Arduino.flycam');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.unipolar_stepper_motor'); //nom du fichier et non de la fonction. on définit encore notre catégorie et dépendances mais cette fois on dit qu'il s'agit de code Arduino : goog.provide('Blockly.Arduino.flycam');
+// goog.require('Blockly.Arduino');
 
 //Bloc de configuration
 Blockly.Arduino['unipolar_stepper_motor_init'] = function(block) { //Attention l'usine à bloc ajoute Blockly.Arduino['unipolar_stepper_motor_init'] au lieu de Blockly.Arduino.unipolar_stepper_motor_init

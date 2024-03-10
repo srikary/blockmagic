@@ -2,9 +2,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.mBot_3');
+// goog.provide('Blockly.Arduino.mBot_3');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.mbot_left_sens = function() {
 	var pindir1 = 7;

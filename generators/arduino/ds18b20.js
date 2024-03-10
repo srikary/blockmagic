@@ -4,9 +4,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.ds18b20');
+// goog.provide('Blockly.Arduino.ds18b20');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['ds18b20_search1'] = function() {
   var ds18b20_pin = this.getFieldValue('ds18b20_pin');

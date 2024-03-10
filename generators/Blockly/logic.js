@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.logic');
+// goog.provide('Blockly.Arduino.logic');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.controls_if = function() {

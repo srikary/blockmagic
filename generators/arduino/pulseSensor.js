@@ -4,8 +4,8 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.pulseSensor');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.pulseSensor');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.pulseSensor_check = function () {
   var pinReceive = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

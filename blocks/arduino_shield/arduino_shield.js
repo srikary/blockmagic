@@ -6,10 +6,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.arduino_shield');
+// goog.provide('Blockly.Blocks.arduino_shield');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.LCD_Keypad_Shield_DFR_09 = {
   init: function() {

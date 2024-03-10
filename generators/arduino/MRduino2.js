@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.MRduino2');
+// goog.provide('Blockly.Arduino.MRduino2');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino['MRduino2_init'] = function() {

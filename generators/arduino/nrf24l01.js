@@ -5,8 +5,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.nrf24l01');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.nrf24l01');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.nrf24l01_init = function(block) {
 	var _irq = Blockly.Arduino.valueToCode(block, 'irq', Blockly.Arduino.ORDER_ATOMIC);

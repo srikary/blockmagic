@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.u8g');
+// goog.provide('Blockly.Arduino.u8g');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.lp2i_u8g_draw_string = function() {
   var value_text = Blockly.Arduino.valueToCode(this, 'Text', Blockly.Arduino.ORDER_ATOMIC) || '\'\'';

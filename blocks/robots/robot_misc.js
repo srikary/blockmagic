@@ -25,10 +25,10 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Blocks.robots_sensors');
+// goog.provide('Blockly.Blocks.robots_sensors');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['IR_serial_decoder'] = {
   init: function() {

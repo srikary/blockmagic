@@ -1,10 +1,10 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.APDS9960');
+// goog.provide('Blockly.Blocks.APDS9960');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldInstance');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldInstance');
 
 
 Blockly.Blocks['APDS9960_ColorSensor_init'] = {

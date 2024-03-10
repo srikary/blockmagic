@@ -1,13 +1,13 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.adafruit_motorshield_v1');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.adafruit_motorshield_v1');
+// goog.require('Blockly.Arduino');
 
 
 // Moteur DC - VERSION 1
 Blockly.Arduino.dcmotor_v1 = function() {
 
-	//Définition variables
+	//Dï¿½finition variables
 	var dropdown_moteur = this.getFieldValue('MOTEUR');
 	var dropdown_etat = this.getFieldValue('ETAT');
 	var value_vitesse = Blockly.Arduino.valueToCode(this, 'Vitesse');
@@ -15,7 +15,7 @@ Blockly.Arduino.dcmotor_v1 = function() {
 	//librairie
 	Blockly.Arduino.includes_['AFMotor.h'] = '#include <AFMotor.h>';
 
-	//Définition des moteurs
+	//Dï¿½finition des moteurs
 	Blockly.Arduino.definitions_[' AF_DCMotor motor_dc_'+dropdown_moteur] = 'AF_DCMotor motor_dc_'+dropdown_moteur+'('+dropdown_moteur+', MOTOR12_2KHZ);\n';
 
 	//Code moteur : direction et vitesse
@@ -25,10 +25,10 @@ Blockly.Arduino.dcmotor_v1 = function() {
 	  return code;
 };
 
-// Moteur Pas-à-pas - VERSION 1
+// Moteur Pas-ï¿½-pas - VERSION 1
 Blockly.Arduino.pap_v1 = function() {
 
-//Définition variables
+//Dï¿½finition variables
   var dropdown_PAP1 = this.getFieldValue('PAP1');
   var dropdown_direction_PAP1 = this.getFieldValue('direction_PAP1');
   var value_Pas_par_tour_PAP1 = Blockly.Arduino.valueToCode(this, 'Pas_par_tour1');
@@ -39,7 +39,7 @@ Blockly.Arduino.pap_v1 = function() {
 Blockly.Arduino.definitions_['AFMotor.h'] = '#include <AFMotor.h>';
 
 
-//Définition des moteurs
+//Dï¿½finition des moteurs
 Blockly.Arduino.definitions_['AF_Stepper motor' +dropdown_PAP1] = 'AF_Stepper motor'+dropdown_PAP1+'('+value_Pas_par_tour_PAP1+','+dropdown_PAP1+');\n';
 
 

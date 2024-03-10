@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python');
+// goog.provide('Blockly.Python');
 
-goog.require('Blockly.Generator');
+// goog.require('Blockly.Generator');
 
 
 /**

@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.robobox.IRremote');
+// goog.provide('Blockly.robobox.IRremote');
 
-goog.require('Blockly.robobox');
+// goog.require('Blockly.robobox');
 
 Blockly.Arduino.robobox_IRremote_decode = function() {
     var pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

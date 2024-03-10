@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.ADXL362');
+// goog.provide('Blockly.Arduino.ADXL362');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.ADXL362_init = function() {
 };

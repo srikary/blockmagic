@@ -1,11 +1,11 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.math');
+// goog.provide('Blockly.Blocks.math');
 
-goog.require('Blockly.Blocks');
+// goog.require('Blockly.Blocks');
 
-Blockly.Blocks.math.HUE = "#5CB712";
+// Blockly.Blocks.math.HUE = "#5CB712";
 
 Blockly.Blocks.inout_angle_maths = {
   init: function() {

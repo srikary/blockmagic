@@ -5,10 +5,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.icn');
+// goog.provide('Blockly.Blocks.icn');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['tb6612_setup'] = {
   init: function() {

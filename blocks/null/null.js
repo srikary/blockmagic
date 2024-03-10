@@ -19,10 +19,10 @@
  
 'use strict';
 
-goog.provide('Blockly.Blocks.null');
+// goog.provide('Blockly.Blocks.null');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.null_in = {
   init: function() {

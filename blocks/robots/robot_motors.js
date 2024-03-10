@@ -25,10 +25,10 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Blocks.robots_motors');
+// goog.provide('Blockly.Blocks.robots_motors');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['ardu_motor'] = {
   init: function() {

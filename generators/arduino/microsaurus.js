@@ -22,9 +22,9 @@
  * @author greich@ac-versailles.fr Guillaume Reich
  */
 
-goog.provide('Blockly.Arduino.microsaurus');
+// goog.provide('Blockly.Arduino.microsaurus');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.ms_IR_receiver = function() {
   var value_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

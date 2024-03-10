@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.variables');
+// goog.provide('Blockly.Arduino.variables');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino['variables_get'] = function(block) {

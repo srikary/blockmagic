@@ -6,7 +6,8 @@
     <title>Blockly@rduino</title>
     <!--load first for menus-->
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
-    <script type="text/javascript" src="core/blockly_compressed.js"></script>
+    <!-- <script type="text/javascript" src="core/blockly_compressed.js"></script> -->
+    <script src="https://unpkg.com/blockly"></script>
     <!-- needed for type of variable -->
     <script type="text/javascript" src="core/Ardublockly/type.js"></script>
     <script type="text/javascript" src="core/Ardublockly/types.js"></script>
@@ -18,6 +19,7 @@
     <script type="text/javascript" src="generators/generator_arduino.js"></script>
     <script type="text/javascript" src="generators/generator_python.js"></script>
 
+    <script type="text/javascript" src="core/custom_renderer.js"></script>
     <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_core_web.js"></script>
     <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_boards.js"></script>
     <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_functions_buttons_web.js"></script>
@@ -41,7 +43,7 @@
     <script type="text/javascript" src="generators/arduino_resume.js"></script>
 
     <!-- define all python & micro:bit-->
-    <script type="text/javascript" src="blocks/microbit/microbit.js"></script>
+    <!-- <script type="text/javascript" src="blocks/microbit/microbit.js"></script> -->
     <script type="text/javascript" src="generators/python_resume.js"></script>
 
     <script type="text/javascript" src="lang/code.js"></script>

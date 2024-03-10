@@ -29,9 +29,9 @@
 
 'use strict';
  
-goog.provide('Blockly.Arduino.grove');
+// goog.provide('Blockly.Arduino.grove');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.grove_led = function() {

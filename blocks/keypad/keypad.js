@@ -4,10 +4,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.keypad');
+// goog.provide('Blockly.Blocks.keypad');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 //@CD 20170311
 Blockly.Blocks.keypad_touche_appuyee = {

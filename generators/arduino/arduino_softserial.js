@@ -1,6 +1,6 @@
-goog.provide('Blockly.Blocks.softserial');
+// goog.provide('Blockly.Blocks.softserial');
 
-goog.require('Blockly.Blocks');
+// goog.require('Blockly.Blocks');
 
 Blockly.Arduino['soft_init'] = function(block) {
   var dropdown_pin1 = Blockly.Arduino.valueToCode(this, 'PIN1', Blockly.Arduino.ORDER_ATOMIC);

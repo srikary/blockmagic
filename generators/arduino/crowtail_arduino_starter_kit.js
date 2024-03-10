@@ -27,9 +27,9 @@
 
 'use strict';
  
-goog.provide('Blockly.Arduino.crowtail_arduino_starter_kit');
+// goog.provide('Blockly.Arduino.crowtail_arduino_starter_kit');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.crowtail_arduino_starter_kit_led = function() {

@@ -23,11 +23,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.Sharp_IR');
+// goog.provide('Blockly.Blocks.Sharp_IR');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldInstance');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldInstance');
 
 Blockly.Blocks.Sharp_IR_attach = {
   init: function() {

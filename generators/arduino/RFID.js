@@ -13,9 +13,9 @@
 
  'use strict';
 
-goog.provide('Blockly.Arduino.RFID');
+// goog.provide('Blockly.Arduino.RFID');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.RFID_module = function() {
   var value_sda = Blockly.Arduino.valueToCode(this, 'SDA', Blockly.Arduino.ORDER_ATOMIC);

@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.ethernet');
+// goog.provide('Blockly.Arduino.ethernet');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.ethernet_begin_dhcp_client = function() {
   var version = this.getFieldValue('VERSION');

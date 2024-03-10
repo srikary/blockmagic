@@ -1,9 +1,9 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.HX711');
+// goog.provide('Blockly.Blocks.HX711');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 
 Blockly.Blocks['HX711_init'] = {

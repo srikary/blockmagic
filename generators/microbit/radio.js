@@ -1,7 +1,7 @@
 'use strict';
 
-goog.provide('Blockly.Python.radio');
-goog.require('Blockly.Python');
+// goog.provide('Blockly.Python.radio');
+// goog.require('Blockly.Python');
 
 // Any imports need to be reserved words
 Blockly.Python.addReservedWords('radio');

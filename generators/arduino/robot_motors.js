@@ -24,9 +24,9 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Arduino.robots_motors');
+// goog.provide('Blockly.Arduino.robots_motors');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.ardu_motor = function() {
     var dropdown_direction = this.getFieldValue('DIRECTION'); 

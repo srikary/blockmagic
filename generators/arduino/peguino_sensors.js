@@ -9,9 +9,9 @@ more at www.peguino.com
 
 'use strict';
  
-goog.provide('Blockly.Arduino.peguino_sensors');
+// goog.provide('Blockly.Arduino.peguino_sensors');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.peguino_sensors_pir_motion_sensor = function() {
   var dropdown_pin = this.getFieldValue(Blockly.Msg.Peguino_Bodysensor_UNIT);

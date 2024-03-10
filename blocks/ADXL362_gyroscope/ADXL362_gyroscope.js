@@ -1,9 +1,9 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.ADXL362');
+// goog.provide('Blockly.Blocks.ADXL362');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 
 Blockly.Blocks['ADXL362_init'] = {

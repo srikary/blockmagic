@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.robobox.servo');
+// goog.provide('Blockly.robobox.servo');
 
-goog.require('Blockly.robobox');
+// goog.require('Blockly.robobox');
 
 Blockly.Arduino.robobox_servo_setAngle = function() {
   var dropdown_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

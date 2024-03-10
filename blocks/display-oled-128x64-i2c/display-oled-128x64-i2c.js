@@ -1,10 +1,10 @@
 ﻿// define blocks
 'use strict';
 
-goog.provide('Blockly.Blocks.u8g');
+// goog.provide('Blockly.Blocks.u8g');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['lp2i_u8g_draw_string'] = {
  init: function() {

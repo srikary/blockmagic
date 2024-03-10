@@ -5,8 +5,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.Adafruit_RGB_LCD_Shield');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.Adafruit_RGB_LCD_Shield');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.Adafruit_RGB_LCD_Shield_init = function() {
   

@@ -1,11 +1,11 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.texts');
+// goog.provide('Blockly.Blocks.texts');
 
-goog.require('Blockly.Blocks');
+// goog.require('Blockly.Blocks');
 
-Blockly.Blocks.texts.HUE = "#8A55D7";
+// Blockly.Blocks.texts.HUE = "#8A55D7";
 
 Blockly.Blocks['text_char'] = {
   init: function() {

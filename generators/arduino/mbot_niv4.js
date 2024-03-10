@@ -2,9 +2,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.mBot_3');
+// goog.provide('Blockly.Arduino.mBot_3');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.mbot_onoff_pin_left_sens = function() {
 	Blockly.Arduino.setups_["setup_mBot_mot_left_sens_setup"] = "pinMode(7,OUTPUT);";

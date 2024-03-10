@@ -4,9 +4,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.seeed_music_shield');
+// goog.provide('Blockly.Arduino.seeed_music_shield');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['seeed_music_shield_addtolist'] = function(block) {
   var value_name = Blockly.Arduino.valueToCode(block, 'FILE_NAME', Blockly.Arduino.ORDER_ATOMIC);

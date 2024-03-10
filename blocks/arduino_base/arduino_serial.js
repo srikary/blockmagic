@@ -24,10 +24,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.arduino_serial');
+// goog.provide('Blockly.Blocks.arduino_serial');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 
 /**

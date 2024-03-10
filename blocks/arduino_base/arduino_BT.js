@@ -1,9 +1,9 @@
 ﻿"use strict";
 
-goog.provide("Blockly.Blocks.arduino_BT");
+// goog.provide("Blockly.Blocks.arduino_BT");
 
-goog.require("Blockly.Blocks");
-goog.require('Blockly.Types');
+// goog.require("Blockly.Blocks");
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.arduino_BT_send = {
     init: function() {

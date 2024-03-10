@@ -6,9 +6,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.arduino_shield');
+// goog.provide('Blockly.Arduino.arduino_shield');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.LCD_Keypad_Shield_DFR_09 = function() {

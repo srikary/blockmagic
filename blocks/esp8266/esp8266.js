@@ -1,10 +1,10 @@
 //thanks to JP Fontaine
 
 'use strict';
-goog.provide("Blockly.Blocks.esp8266");
+// goog.provide("Blockly.Blocks.esp8266");
 
-goog.require("Blockly.Blocks");
-goog.require("Blockly.Types");
+// goog.require("Blockly.Blocks");
+// goog.require("Blockly.Types");
 
 /*  wifi  */
 Blockly.Blocks["esp8266_init"]={

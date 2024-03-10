@@ -22,9 +22,9 @@
  * @author greich@ac-versailles.fr Guillaume Reich
  */
 
-goog.provide('Blockly.Arduino.infrarouge');
+// goog.provide('Blockly.Arduino.infrarouge');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.IR_init = function() {
   var value_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

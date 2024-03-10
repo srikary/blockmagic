@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.arduino_BT');
+// goog.provide('Blockly.Arduino.arduino_BT');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.arduino_BT_send = function(block) {
     var value_data_s = Blockly.Arduino.valueToCode(block, "data_s", Blockly.Arduino.ORDER_NONE);

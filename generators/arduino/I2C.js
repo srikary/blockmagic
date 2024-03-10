@@ -5,8 +5,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.I2C');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.I2C');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.I2C_init = function() {
 	var Pin_SCL = Blockly.Arduino.valueToCode(this, 'Pin_SCL', Blockly.Arduino.ORDER_ATOMIC);

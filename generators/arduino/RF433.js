@@ -25,9 +25,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.RF433');
+// goog.provide('Blockly.Arduino.RF433');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.rf433_rxready = function() {
   var pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

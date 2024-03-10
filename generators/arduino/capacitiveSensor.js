@@ -7,8 +7,8 @@
  
 'use strict';
 
-goog.provide('Blockly.Arduino.capacitiveSensor');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.capacitiveSensor');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.capacitiveSensor_check = function() {
  

@@ -1,9 +1,9 @@
 //thanks to JP Fontaine
 
 "use strict";
-goog.provide("Blockly.Blocks.html");
-goog.require("Blockly.Blocks");
-goog.require('Blockly.Types');
+// goog.provide("Blockly.Blocks.html");
+// goog.require("Blockly.Blocks");
+// goog.require('Blockly.Types');
   ////////////
  /*  html  */
 ////////////

@@ -13,11 +13,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.stepper_motor');
+// goog.provide('Blockly.Blocks.stepper_motor');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldInstance');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldInstance');
 
 Blockly.Blocks['stepper_config'] = {
   /**

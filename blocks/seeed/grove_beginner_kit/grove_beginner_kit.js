@@ -28,10 +28,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.grove_beginner_kit');
+// goog.provide('Blockly.Blocks.grove_beginner_kit');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 //1.Grove - LED: Simple LED module
 Blockly.Blocks['grove_gbk_led'] = {

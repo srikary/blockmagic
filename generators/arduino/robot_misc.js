@@ -24,9 +24,9 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Arduino.robots_sensors');
+// goog.provide('Blockly.Arduino.robots_sensors');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.IR_serial_decoder = function() {

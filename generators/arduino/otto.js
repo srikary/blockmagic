@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.otto');
+// goog.provide('Blockly.Arduino.otto');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['otto9_home'] = function(block) {
   Blockly.Arduino.includes_['otto9_lib'] = '#include <Otto9.h>\n'

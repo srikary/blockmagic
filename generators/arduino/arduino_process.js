@@ -1,7 +1,7 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.processes');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.processes');
+// goog.require('Blockly.Arduino');
 
 var basecode_process =
     'typedef struct process_s {\n' +

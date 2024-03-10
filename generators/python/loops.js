@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.loops');
+// goog.provide('Blockly.Python.loops');
 
-goog.require('Blockly.Python');
+// goog.require('Blockly.Python');
 
 
 Blockly.Python['controls_repeat_ext'] = function(block) {

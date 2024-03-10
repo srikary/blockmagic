@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.procedures');
+// goog.provide('Blockly.Python.procedures');
 
-goog.require('Blockly.Python');
+// goog.require('Blockly.Python');
 
 
 Blockly.Python['procedures_defreturn'] = function(block) {

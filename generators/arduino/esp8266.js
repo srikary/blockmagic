@@ -1,8 +1,8 @@
 //thanks to JP Fontaine
 
 "use strict";
-goog.provide("Blockly.Arduino.esp8266");
-goog.require("Blockly.Arduino");
+// goog.provide("Blockly.Arduino.esp8266");
+// goog.require("Blockly.Arduino");
 
 Blockly.Arduino['esp8266_init']=function(block){
 	var mode=block.getFieldValue("clientserveur");

@@ -19,9 +19,9 @@
  * @author gasolin@gmail.com (Fred Lin)
  */
 
-goog.provide('Blockly.Arduino.autoduino');
+// goog.provide('Blockly.Arduino.autoduino');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 //---------------------------------------------------
 

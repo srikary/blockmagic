@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.EsusBoard');
+// goog.provide('Blockly.Arduino.EsusBoard');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['EsusBoard_init'] = function() {
   Blockly.Arduino.includes_['define_esus'] = '#include <esusBoard.h>';

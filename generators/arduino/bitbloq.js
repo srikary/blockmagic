@@ -3,9 +3,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.bq');
+// goog.provide('Blockly.Arduino.bq');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.bq_led = function() {
 	var dropdown_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

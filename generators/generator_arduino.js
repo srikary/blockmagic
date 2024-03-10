@@ -25,10 +25,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino');
+// goog.provide('Blockly.Arduino');
 
-goog.require('Blockly.Generator');
-goog.require('Blockly.StaticTyping');
+// goog.require('Blockly.Generator');
+// goog.require('Blockly.StaticTyping');
 
 
 /**

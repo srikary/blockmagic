@@ -24,10 +24,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.array');
+// goog.provide('Blockly.Blocks.array');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['array_create_with'] = {
     /**

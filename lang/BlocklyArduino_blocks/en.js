@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Msg.en');
+// goog.provide('Blockly.Msg.en');
 
-goog.require('Blockly.Msg');
+// goog.require('Blockly.Msg');
 
 Blockly.Msg.ARRAY_CREATE_EMPTY_TITLE = 'empty!';
 Blockly.Msg.tab_create="create element block for array %1'";

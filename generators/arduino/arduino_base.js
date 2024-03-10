@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.arduino_base');
+// goog.provide('Blockly.Arduino.arduino_base');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.base_begin = function (block) {
   return ""

@@ -4,10 +4,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.PIR_HC_SR505');
+// goog.provide('Blockly.Blocks.PIR_HC_SR505');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.PIR_HC_SR505_detect = {
   init: function() {

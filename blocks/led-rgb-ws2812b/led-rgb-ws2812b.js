@@ -1,11 +1,11 @@
 ﻿// define blocks
 'use strict';
 
-goog.provide('Blockly.Blocks.ledRGB_WS2812B');
+// goog.provide('Blockly.Blocks.ledRGB_WS2812B');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldInstance');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldInstance');
 
 Blockly.Blocks['lp2i_ledRGB_WS2812B_init'] = {
   init: function() {

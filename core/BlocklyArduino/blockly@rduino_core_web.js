@@ -4,9 +4,9 @@
 
 'use strict';
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldDate');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldDate');
 
 /**
  * Create a namespace for the application.
@@ -221,8 +221,8 @@ BlocklyDuino.addReplaceParamToUrl = function(url, param, value) {
 BlocklyDuino.loadBlocks = function(defaultXml) {
     if (defaultXml) {
         // Load the editor with default starting blocks.
-        var xml = Blockly.Xml.textToDom(defaultXml);
-        Blockly.Xml.domToWorkspace(xml, BlocklyDuino.workspace);
+        var xml = Blockly.utils.xml.textToDom(defaultXml);
+        Blockly.utils.Xml.domToWorkspace(xml, BlocklyDuino.workspace);
     } else {
         var loadOnce = null;
         try {
@@ -235,7 +235,7 @@ BlocklyDuino.loadBlocks = function(defaultXml) {
         if (loadOnce != null) {
             // Language switching stores the blocks during the reload.
             sessionStorage.removeItem('loadOnceBlocks');
-            var xml = Blockly.Xml.textToDom(loadOnce);
+            var xml = Blockly.utils.xml.textToDom(loadOnce);
             Blockly.Xml.domToWorkspace(xml, BlocklyDuino.workspace);
         }
     }
@@ -920,6 +920,7 @@ BlocklyDuino.init = function() {
     BlocklyDuino.setArduinoBoard();
 
     console.log("Srikar: came here 1");
+
     // build Blockly ...
     BlocklyDuino.workspace = Blockly.inject('content_blocks', {
         grid: {
@@ -930,6 +931,7 @@ BlocklyDuino.init = function() {
         },
         sounds: true,
         media: 'media/',
+        renderer: 'custom_renderer',
         rtl: false,
         toolbox: BlocklyDuino.buildToolbox(),
         zoom: {

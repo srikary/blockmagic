@@ -4,9 +4,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.petitbot');
+// goog.provide('Blockly.Arduino.petitbot');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.petitbot_hcsr04 = function() {
   Blockly.Arduino.definitions_['define_PB_mesure_distance_cm'] = "int mesure_distance_petitbot()\n"+

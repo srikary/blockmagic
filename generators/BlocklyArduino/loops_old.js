@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.loops');
+// goog.provide('Blockly.Arduino.loops');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.controls_forEach = function() {
   // For each loop.

@@ -1,12 +1,12 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.adafruit_motorshield_v2');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.adafruit_motorshield_v2');
+// goog.require('Blockly.Arduino');
 
 // Moteur DC - VERSION 2
 Blockly.Arduino.dcmotor_v2 = function() {
 
-//Définition variables
+//Dï¿½finition variables
   var dropdown_moteur = this.getFieldValue('MOTEUR');
   var dropdown_etat = this.getFieldValue('ETAT');
   var value_vitesse = Blockly.Arduino.valueToCode(this, 'Vitesse');
@@ -16,7 +16,7 @@ Blockly.Arduino.includes_['Wire.h'] = '#include <Wire.h>';
 Blockly.Arduino.includes_['Adafruit_MotorShield.h'] = '#include <Adafruit_MotorShield.h>';
 Blockly.Arduino.includes_['utility/Adafruit_MS_PWMServoDriver.h'] = '#include "utility/Adafruit_MS_PWMServoDriver.h"';
 
-//Définition des moteurs
+//Dï¿½finition des moteurs
 Blockly.Arduino.definitions_['Adafruit_AFMS'] = 'Adafruit_MotorShield AFMS = Adafruit_MotorShield();';
 Blockly.Arduino.definitions_['Adafruit_DCMotor *myMotor'+dropdown_moteur] = 'Adafruit_DCMotor *myMotor'+dropdown_moteur+' = AFMS.getMotor('+dropdown_moteur+');\n';
 
@@ -31,10 +31,10 @@ Blockly.Arduino.setups_['AFMS.begin()'] = 'AFMS.begin();';
   return code;
 };
 
-// Moteur Pas-à-pas - VERSION 2
+// Moteur Pas-ï¿½-pas - VERSION 2
 Blockly.Arduino.pap_v2 = function() {
 
-//Définition variables
+//Dï¿½finition variables
   var dropdown_PAP2 = this.getFieldValue('PAP2');
   var dropdown_direction_PAP2 = this.getFieldValue('direction_PAP2');
   var value_Pas_par_tour_PAP2 = Blockly.Arduino.valueToCode(this, 'Pas_par_tour2');
@@ -46,7 +46,7 @@ Blockly.Arduino.includes_['Wire.h'] = '#include <Wire.h>';
 Blockly.Arduino.includes_['Adafruit_MotorShield.h'] = '#include <Adafruit_MotorShield.h>';
 Blockly.Arduino.includes_['utility/Adafruit_MS_PWMServoDriver.h'] = '#include "utility/Adafruit_MS_PWMServoDriver.h"';
 
-//Définition des moteurs
+//Dï¿½finition des moteurs
 Blockly.Arduino.definitions_['Adafruit_AFMS'] = 'Adafruit_MotorShield AFMS = Adafruit_MotorShield();';
 Blockly.Arduino.definitions_['Adafruit_StepperMotor *myMotor' +dropdown_PAP2] = 'Adafruit_StepperMotor *myMotor'+dropdown_PAP2+' = AFMS.getMotor('+value_Pas_par_tour_PAP2+','+dropdown_PAP2+');\n';
 

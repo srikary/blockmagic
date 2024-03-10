@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.drone');
+// goog.provide('Blockly.Arduino.drone');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.drone_ESC_pwm = function() {
   var value_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

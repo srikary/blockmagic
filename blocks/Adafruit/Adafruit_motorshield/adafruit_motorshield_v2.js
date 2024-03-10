@@ -1,9 +1,9 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.adafruit_motorshield_v2');
+// goog.provide('Blockly.Blocks.adafruit_motorshield_v2');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 //Moteur DC - V2
 Blockly.Blocks['dcmotor_v2'] = {

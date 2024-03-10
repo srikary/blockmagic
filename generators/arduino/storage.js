@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.storage');
+// goog.provide('Blockly.Arduino.storage');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.storage_sd_write = function() {
 	var file = Blockly.Arduino.quote_(this.getFieldValue('FILE'));

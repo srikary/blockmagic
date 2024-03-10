@@ -5,9 +5,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.tsl2561');
+// goog.provide('Blockly.Arduino.tsl2561');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['tsl2561_init'] = function() {
   Blockly.Arduino.includes_['tsl_include'] = '#include <Wire.h>\n'

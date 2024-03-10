@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.math');
+// goog.provide('Blockly.Python.math');
 
-goog.require('Blockly.Python');
+// goog.require('Blockly.Python');
 
 
 // If any new block imports any library, add that library name here.

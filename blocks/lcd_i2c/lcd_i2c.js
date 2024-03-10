@@ -2,10 +2,10 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.lcd_i2c');
+// goog.provide('Blockly.Blocks.lcd_i2c');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 //lcdinit OK
 Blockly.Blocks['lcd_i2c_lcdinit'] = {

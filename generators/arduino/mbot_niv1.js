@@ -2,9 +2,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.mBot_1');
+// goog.provide('Blockly.Arduino.mBot_1');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.mbot_forward = function() {
 	var pindir1 = 7;

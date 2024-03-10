@@ -7,8 +7,8 @@
  
 'use strict';
 
-goog.provide('Blockly.Arduino.anemometre');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.anemometre');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.anemometre_vitesse_rotation = function() {
   Blockly.Arduino.includes_['anemo_lib'] = '#include <PinChangeInt.h>';

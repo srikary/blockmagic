@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.robotkit');
+// goog.provide('Blockly.Arduino.robotkit');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['motora'] = function(block) {
     var dropdown_direction = block.getFieldValue('direction');

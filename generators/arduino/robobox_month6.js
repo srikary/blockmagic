@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.robobox.month4');
+// goog.provide('Blockly.robobox.month4');
 
-goog.require('Blockly.robobox');
+// goog.require('Blockly.robobox');
 
 Blockly.Arduino.robobox_month6_lineC = function() {
     robobox_month4_init.call();

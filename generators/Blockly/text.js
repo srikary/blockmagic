@@ -15,9 +15,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.text');
+// goog.provide('Blockly.Arduino.text');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 /**

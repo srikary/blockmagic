@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.bq');
+// goog.provide('Blockly.Arduino.bq');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.robobox_sensors_ultrasound = function() {
   var dropdown_triger_pin = Blockly.Arduino.valueToCode(this, 'TRIGER', Blockly.Arduino.ORDER_ATOMIC);

@@ -1,9 +1,9 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.grove_VL53L0X');
+// goog.provide('Blockly.Blocks.grove_VL53L0X');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['grove_VL53L0X_test'] = {
   init: function() {

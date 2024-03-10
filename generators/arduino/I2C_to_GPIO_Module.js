@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.I2C_to_GPIO_Module');
+// goog.provide('Blockly.Arduino.I2C_to_GPIO_Module');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.I2C_to_GPIO_Module_scan = function() {
 	Blockly.Arduino.includes_['define_I2C_scan'] = '#include <Wire.h>';

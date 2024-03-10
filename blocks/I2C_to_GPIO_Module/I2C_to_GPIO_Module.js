@@ -20,10 +20,10 @@
  
 'use strict';
 
-goog.provide('Blockly.Blocks.I2C_to_GPIO_Module');
+// goog.provide('Blockly.Blocks.I2C_to_GPIO_Module');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.I2C_to_GPIO_Module_scan = {
 	init: function() {

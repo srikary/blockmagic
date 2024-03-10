@@ -7,9 +7,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.blynk_cc');
+// goog.provide('Blockly.Arduino.blynk_cc');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.blynk_cc_uno_cnx_usb = function() {
 var auth = Blockly.Arduino.valueToCode(this, 'AUTH', Blockly.Arduino.ORDER_ATOMIC) || ''

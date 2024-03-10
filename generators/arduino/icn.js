@@ -5,9 +5,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.icn');
+// goog.provide('Blockly.Arduino.icn');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['tb6612_setup'] = function() {
   var PWMA_pin = this.getFieldValue('PWMA');

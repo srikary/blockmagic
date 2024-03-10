@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.logic');
+// goog.provide('Blockly.Python.logic');
 
-goog.require('Blockly.Python');
+// goog.require('Blockly.Python');
 
 
 Blockly.Python['controls_if'] = function(block) {

@@ -2,9 +2,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.en');
+// goog.provide('Blockly.Msg.en');
 
-goog.require('Blockly.Msg');
+// goog.require('Blockly.Msg');
 
 Blockly.Msg.ADD_COMMENT = "Add Comment";
 Blockly.Msg.CHANGE_VALUE_TITLE = "Change value:";

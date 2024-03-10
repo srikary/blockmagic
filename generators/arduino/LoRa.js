@@ -2,8 +2,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.LoRa');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.LoRa');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['LoRa_init'] = function() {
         var dropdown_freq = this.getFieldValue('FREQ');	

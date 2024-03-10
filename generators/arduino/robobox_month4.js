@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.robobox.month4');
+// goog.provide('Blockly.robobox.month4');
 
-goog.require('Blockly.robobox');
+// goog.require('Blockly.robobox');
 
 function robobox_month4_init() {
     // Blockly.Arduino.includes_['define_month4'] = '#include <IRremote.h>';

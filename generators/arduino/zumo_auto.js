@@ -24,9 +24,9 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Arduino.Zumo_auto');
+// goog.provide('Blockly.Arduino.Zumo_auto');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.Zumo_SensorCalibration = function() {
   Blockly.Arduino.includes_["includes_Zumo_SensorCalibration"] = 

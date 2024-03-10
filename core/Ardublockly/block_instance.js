@@ -24,19 +24,19 @@
  */
 'use strict';
 
-goog.require('Blockly.Block');
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Comment');
-goog.require('Blockly.Connection');
-goog.require('Blockly.Input');
-goog.require('Blockly.Mutator');
-goog.require('Blockly.Warning');
-goog.require('Blockly.Workspace');
-goog.require('Blockly.Xml');
-goog.require('goog.array');
-goog.require('goog.asserts');
-goog.require('goog.math.Coordinate');
-goog.require('goog.string');
+// goog.require('Blockly.Block');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Comment');
+// goog.require('Blockly.Connection');
+// goog.require('Blockly.Input');
+// goog.require('Blockly.Mutator');
+// goog.require('Blockly.Warning');
+// goog.require('Blockly.Workspace');
+// goog.require('Blockly.Xml');
+// goog.require('goog.array');
+// goog.require('goog.asserts');
+// goog.require('goog.math.Coordinate');
+// goog.require('goog.string');
 
 
 /**

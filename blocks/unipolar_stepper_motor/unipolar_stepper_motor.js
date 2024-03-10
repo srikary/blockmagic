@@ -13,11 +13,11 @@
  //cf. http://libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino/creerblocsmultiling/blocdef
 'use strict';//nécessaire
  
-goog.provide('Blockly.Blocks.unipolar_stepper_motor'); //nom du fichier et non le nom de la fonction
+// goog.provide('Blockly.Blocks.unipolar_stepper_motor'); //nom du fichier et non le nom de la fonction
 
-goog.require('Blockly.Blocks'); //A besoin de cette bibliothèque
-goog.require('Blockly.Types'); //idem
-goog.require('Blockly.FieldInstance'); //utilisation de variables paritculières dites 'instances'
+// goog.require('Blockly.Blocks'); //A besoin de cette bibliothèque
+// goog.require('Blockly.Types'); //idem
+// goog.require('Blockly.FieldInstance'); //utilisation de variables paritculières dites 'instances'
 
 
 //bloc pour configurer le moteur pas à pas 28BYJ-48 avec driver ULN2003A, réalisé avec https://technologiescollege.github.io/Blockly-at-rduino/tools/factory/block_factory.html

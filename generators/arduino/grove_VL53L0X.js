@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.grove_VL53L0X');
+// goog.provide('Blockly.Arduino.grove_VL53L0X');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.grove_VL53L0X_test = function() {

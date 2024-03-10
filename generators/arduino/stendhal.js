@@ -5,9 +5,9 @@
 
 'use strict';
  
-goog.provide('Blockly.Arduino.stendhal');
-goog.require('Blockly.Arduino');
-goog.require('Blockly.StaticTyping');
+// goog.provide('Blockly.Arduino.stendhal');
+// goog.require('Blockly.Arduino');
+// goog.require('Blockly.StaticTyping');
 
 Blockly.Arduino.stendhal_button = function() {
   var dropdown_pin = this.getFieldValue('PIN');

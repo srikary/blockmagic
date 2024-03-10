@@ -23,9 +23,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.multifunction');
+// goog.provide('Blockly.Arduino.multifunction');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.multifunction_buildin_led = function() {
   var dropdown_stat = this.getFieldValue('STAT');

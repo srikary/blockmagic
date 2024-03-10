@@ -1,10 +1,10 @@
 ﻿// define blocks
 'use strict';
 
-goog.provide('Blockly.Blocks.seeed_music_shield');
+// goog.provide('Blockly.Blocks.seeed_music_shield');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['seeed_music_shield_addtolist'] = {
 	init: function() {

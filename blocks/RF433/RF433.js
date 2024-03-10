@@ -25,10 +25,10 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.RF433');
+// goog.provide('Blockly.Blocks.RF433');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 //goog.require('Blockly.FieldInstance');
 
 Blockly.Msg.RF433_HELPURL = 'http://greich.fr/v1/blog/post.php?id=14';

@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.grove_TF_Mini_LiDAR');
+// goog.provide('Blockly.Arduino.grove_TF_Mini_LiDAR');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.grove_TF_Mini_LiDAR_attach = function() {
   var value_pin1 = Blockly.Arduino.valueToCode(this, 'PIN1', Blockly.Arduino.ORDER_ATOMIC);

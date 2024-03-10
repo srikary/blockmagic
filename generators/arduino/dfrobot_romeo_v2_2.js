@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.RoMeo2');
+// goog.provide('Blockly.Arduino.RoMeo2');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.romeo_mot_M2 = function() {
 	var pindir1 = 7;

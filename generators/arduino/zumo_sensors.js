@@ -24,9 +24,9 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Arduino.Zumo_sensors');
+// goog.provide('Blockly.Arduino.Zumo_sensors');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.Zumo_setup_button_wait_il = function() {

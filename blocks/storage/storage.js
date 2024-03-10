@@ -1,10 +1,10 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.storage');
+// goog.provide('Blockly.Blocks.storage');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldInstance');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldInstance');
 
 Blockly.Blocks.storage_sd_write = {
   init: function() {

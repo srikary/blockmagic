@@ -1,9 +1,9 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.grove_TF_Mini_LiDAR');
+// goog.provide('Blockly.Blocks.grove_TF_Mini_LiDAR');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['grove_TF_Mini_LiDAR_attach'] = {
   init: function() {

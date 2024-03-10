@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.sensor_actuator');
+// goog.provide('Blockly.Arduino.sensor_actuator');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino["SENSOR_ACTUATOR_matrice8x8"] = function(block) {
     var symbole = block.getFieldValue("symbole_matrice");

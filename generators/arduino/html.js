@@ -1,8 +1,8 @@
 //thanks to JP Fontaine
 
 "use strict";
-goog.provide("Blockly.Arduino.html");
-goog.require("Blockly.Arduino");
+// goog.provide("Blockly.Arduino.html");
+// goog.require("Blockly.Arduino");
   ////////////
  /*  html  */
 ////////////

@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.lists');
+// goog.provide('Blockly.Python.lists');
 
-goog.require('Blockly.Python');
+// goog.require('Blockly.Python');
 
 
 Blockly.Python['lists_create_empty'] = function(block) {

@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.keypad');
+// goog.provide('Blockly.Arduino.keypad');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.keypad_touche_appuyee = function() {
   var value_pin_l1 = Blockly.Arduino.valueToCode(this, 'L1', Blockly.Arduino.ORDER_ATOMIC);

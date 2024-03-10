@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.wiichuck');
+// goog.provide('Blockly.Arduino.wiichuck');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.wiichuck_joy = function() {
 	var direction = this.getFieldValue('DIRECTION'); 

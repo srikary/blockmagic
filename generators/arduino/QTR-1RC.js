@@ -6,8 +6,8 @@
  
 'use strict';
 
-goog.provide('Blockly.Arduino.QTR_1RC');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.QTR_1RC');
+// goog.require('Blockly.Arduino');
 
 var QTR_nb_sensors =0;
 

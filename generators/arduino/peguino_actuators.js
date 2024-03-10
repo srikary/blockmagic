@@ -23,9 +23,9 @@
 
 'use strict';
  
-goog.provide('Blockly.Arduino.peguino_actuators');
+// goog.provide('Blockly.Arduino.peguino_actuators');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.peguino_actuators_buzzer = function() {

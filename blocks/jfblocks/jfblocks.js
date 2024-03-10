@@ -4,10 +4,10 @@ Custom blocks by JFB
 
 'use strict';
 
-goog.provide('Blockly.Blocks.jfblocks');
+// goog.provide('Blockly.Blocks.jfblocks');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.jfblocks_decode = {
   init: function() {

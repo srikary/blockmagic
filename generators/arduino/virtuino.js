@@ -1,8 +1,8 @@
 ﻿'use strict';
 
-goog.provide('Blockly.Arduino.virtuino');
+// goog.provide('Blockly.Arduino.virtuino');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['virtuino_init']=function(block){
     var valuerx = Blockly.Arduino.valueToCode(block, 'RX', Blockly.Arduino.ORDER_ATOMIC);

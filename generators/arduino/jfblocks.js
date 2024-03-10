@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.jfblocks');
+// goog.provide('Blockly.Arduino.jfblocks');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.jfblocks_decode = function() {
   Blockly.Arduino.definitions_['jfblocks_decode_def'] =

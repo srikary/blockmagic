@@ -1,9 +1,9 @@
 'use strict';
 
-goog.provide('Blockly.Blocks.BT_ELEC');
+// goog.provide('Blockly.Blocks.BT_ELEC');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['BT_ELEC_Init'] = {
   init: function() {

@@ -24,10 +24,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.arduino_conversion');
+// goog.provide('Blockly.Blocks.arduino_conversion');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks['conversion_tochar'] = {
   init: function() {

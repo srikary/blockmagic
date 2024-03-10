@@ -23,11 +23,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.servo');
+// goog.provide('Blockly.Blocks.servo');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
-goog.require('Blockly.FieldInstance');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
+// goog.require('Blockly.FieldInstance');
 
 //servo block
 //http://www.seeedstudio.com/depot/emax-9g-es08a-high-sensitive-mini-servo-p-760.html?cPath=170_171

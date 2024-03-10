@@ -7,10 +7,10 @@
  
  'use strict';
 
-goog.provide('Blockly.Blocks.capacitiveSensor');
+// goog.provide('Blockly.Blocks.capacitiveSensor');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 
 Blockly.Blocks['capacitiveSensor_init'] = {

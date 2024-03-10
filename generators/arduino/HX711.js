@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.HX711');
+// goog.provide('Blockly.Arduino.HX711');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.HX711_init = function() {
   Blockly.Arduino.includes_['includes_HX711'] = 

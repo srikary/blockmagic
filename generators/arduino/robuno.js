@@ -3,9 +3,9 @@
 
 'use strict';
 
-goog.provide('Blockly.Arduino.robuno');
+// goog.provide('Blockly.Arduino.robuno');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.robuno_led_rouge = function() {
 	var dropdown_pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);

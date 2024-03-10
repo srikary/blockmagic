@@ -28,9 +28,9 @@
 
 'use strict';
  
-goog.provide('Blockly.Arduino.grove_beginner_kit');
+// goog.provide('Blockly.Arduino.grove_beginner_kit');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 //1.Grove - LED: Simple LED module
 Blockly.Arduino.grove_gbk_led = function() {

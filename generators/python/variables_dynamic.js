@@ -24,10 +24,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.variablesDynamic');
+// goog.provide('Blockly.Python.variablesDynamic');
 
-goog.require('Blockly.Python');
-goog.require('Blockly.Python.variables');
+// goog.require('Blockly.Python');
+// goog.require('Blockly.Python.variables');
 
 
 // Python is dynamically typed.

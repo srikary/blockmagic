@@ -11,10 +11,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.I2C');
+// goog.provide('Blockly.Blocks.I2C');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.I2C_init = {
 	init: function() {

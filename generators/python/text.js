@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.texts');
+// goog.provide('Blockly.Python.texts');
 
-goog.require('Blockly.Python');
+// goog.require('Blockly.Python');
 
 
 Blockly.Python['text'] = function(block) {

@@ -24,7 +24,7 @@
  
 'use strict';
 
-goog.provide('Blockly.Blocks.arduino_base');
+// goog.provide('Blockly.Blocks.arduino_base');
 
 //To support syntax defined in http://arduino.cc/en/Reference/HomePage
 

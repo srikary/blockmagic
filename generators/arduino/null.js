@@ -19,9 +19,9 @@
  
 'use strict';
 
-goog.provide('Blockly.Arduino.null');
+// goog.provide('Blockly.Arduino.null');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.null_in = function() {
   return '';

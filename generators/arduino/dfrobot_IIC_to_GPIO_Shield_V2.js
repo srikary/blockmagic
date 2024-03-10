@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.dfrobot_IIC_to_GPIO_Shield_V2');
+// goog.provide('Blockly.Arduino.dfrobot_IIC_to_GPIO_Shield_V2');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.dfrobot_IIC_to_GPIO_Shield_V2_scan = function() {
 	Blockly.Arduino.includes_['define_I2C_scan'] = '#include <Wire.h>';

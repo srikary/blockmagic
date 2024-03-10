@@ -22,9 +22,9 @@
  * @author greich@ac-versailles.fr Guillaume Reich
  */
 
-goog.provide('Blockly.Arduino.micromachine');
+// goog.provide('Blockly.Arduino.micromachine');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.mm_init_wav = function(block) {
   var value_sound_name1 = Blockly.Arduino.valueToCode(block, 'sound_name1', Blockly.Arduino.ORDER_ATOMIC);

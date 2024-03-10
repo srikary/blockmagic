@@ -3,10 +3,10 @@
 // define blocks
 'use strict';
 
-goog.provide('Blockly.Blocks.jeulin_appel_pieton');
+// goog.provide('Blockly.Blocks.jeulin_appel_pieton');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 //appel_pieton_voie1 OK
 Blockly.Blocks['jeulin_appel_pieton_voie1'] = {

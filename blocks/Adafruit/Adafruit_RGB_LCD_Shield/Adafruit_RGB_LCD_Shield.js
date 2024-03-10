@@ -3,10 +3,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.Adafruit_RGB_LCD_Shield');
+// goog.provide('Blockly.Blocks.Adafruit_RGB_LCD_Shield');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 
 Blockly.Blocks['Adafruit_RGB_LCD_Shield_init'] = {

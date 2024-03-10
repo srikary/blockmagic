@@ -18,10 +18,10 @@
  * limitations under the License.
  */
 
-goog.provide('Blockly.Blocks.QTR_1RC');
+// goog.provide('Blockly.Blocks.QTR_1RC');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Blocks.QTR_1RC_attach = {
   /**

@@ -23,10 +23,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.multifunction');
+// goog.provide('Blockly.Blocks.multifunction');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 //To support syntax defined in http://arduino.cc/en/Reference/HomePage
 

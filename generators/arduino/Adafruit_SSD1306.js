@@ -5,8 +5,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.Adafruit_SSD1306');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.Adafruit_SSD1306');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['SSD1306_init'] = function() {
         var dropdown_width = this.getFieldValue('WIDTH');	

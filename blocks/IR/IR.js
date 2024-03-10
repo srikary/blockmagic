@@ -25,10 +25,10 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.infrarouge');
+// goog.provide('Blockly.Blocks.infrarouge');
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Types');
+// goog.require('Blockly.Blocks');
+// goog.require('Blockly.Types');
 
 Blockly.Msg.IR_HELPURL = 'http://greich.fr/v1/blog/post.php?id=13';
 

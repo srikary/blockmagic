@@ -5,8 +5,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.SPI');
-goog.require('Blockly.Arduino');
+// goog.provide('Blockly.Arduino.SPI');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.SPI_init = function() {
 	

@@ -1,8 +1,8 @@
 'use strict';
 
-goog.provide('Blockly.Arduino.RoMeoBle3');
+// goog.provide('Blockly.Arduino.RoMeoBle3');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.romeo_ble_M2_sens = function() {
 	var pindir1 = 7;

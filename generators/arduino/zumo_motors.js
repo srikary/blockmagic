@@ -24,9 +24,9 @@
  * @author erickennedy@outlook.com  Eric Kennedy
  */
 
-goog.provide('Blockly.Arduino.Zumo_motors');
+// goog.provide('Blockly.Arduino.Zumo_motors');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino['zumo_motors_FN'] = function() {
   var dropdown_direction = this.getFieldValue('DIRECTION');

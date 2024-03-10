@@ -24,9 +24,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.array');
+// goog.provide('Blockly.Arduino.array');
 
-goog.require('Blockly.Arduino');
+// goog.require('Blockly.Arduino');
 
 Blockly.Arduino.array_create_with = function() {
   // Create a list with any number of elements of any type.
