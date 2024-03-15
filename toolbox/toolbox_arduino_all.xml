@@ -3,7 +3,7 @@
 	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO</parametre>
 	<category name="CAT_LOGIC" colour="#FFAB19">
 		<block type="controls_if"></block>
-		<block type="controls_switch"></block>
+		<!-- <block type="controls_switch"></block> -->
 		<block type="logic_compare"></block>
 		<block type="logic_operation"></block>
 		<block type="logic_negate"></block>

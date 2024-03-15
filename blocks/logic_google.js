@@ -1,7 +1,7 @@
 /**
  * A dictionary of the block definitions provided by this module.
  */
-Blockly.defineBlocksWithJsonArray([
+const blocks = Blockly.common.createBlockDefinitionsFromJsonArray([
   // Block for boolean data type: true and false.
   {
     'type': 'logic_boolean',
@@ -608,4 +608,4 @@ const LOGIC_TERNARY_ONCHANGE_MIXIN = {
 // Blockly.Extensions.registerMixin('logic_ternary', LOGIC_TERNARY_ONCHANGE_MIXIN);
 
 // Register provided blocks.
-// defineBlocks(blocks);
+Blockly.common.defineBlocks(blocks);

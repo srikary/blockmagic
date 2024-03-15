@@ -1,5 +1,5 @@
 head.load(
-"blocks/logic.js",
+"blocks/logic_google.js",
 "blocks/Blockly/math.js",
 "blocks/Blockly/text.js",
 function() {
@@ -10,7 +10,7 @@ function() {
 head.load(
 "blocks/BlocklyArduino/variables.js",
 "blocks/BlocklyArduino/array.js",
-"blocks/BlocklyArduino/logic.js",
+//"blocks/BlocklyArduino/logic.js",
 "blocks/BlocklyArduino/loops.js",
 "blocks/BlocklyArduino/math.js",
 "blocks/BlocklyArduino/procedures.js",

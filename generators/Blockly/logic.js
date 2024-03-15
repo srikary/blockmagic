@@ -23,13 +23,7 @@
  */
 'use strict';
 
-// goog.provide('Blockly.Arduino.logic');
-
-// goog.require('Blockly.Arduino');
-
-
-Blockly.Arduino.controls_if = function() {
-  // If/elseif/else condition.
+Blockly.Arduino.forBlock['controls_if'] = function() {
   var n = 0;
   var argument = Blockly.Arduino.valueToCode(this, 'IF' + n,
       Blockly.Arduino.ORDER_NONE) || 'false';
