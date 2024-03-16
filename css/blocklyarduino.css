@@ -46,11 +46,6 @@ html,body {
 
 #header_titres {
 	margin-left: 5px;
-	/* height: 36px; */
-	/* position: absolute; */
-	/* display: flex;
-  align-items: center;
-  height: 100%; Or any specific height */
 }
 
 #header_code {
@@ -72,16 +67,6 @@ html,body {
 #btn_levels {
 	margin-top: 5px;
 	margin-left: 10px;
-}
-
-/* #divTitre p {
-	font-size: 15px;
-	font-family: "OpenDyslexic";
-} */
-
-#div_toolboxes {
-	float: left;
-	margin-top: 5px;
 }
 
 #tools_blocks {
@@ -132,20 +117,7 @@ html,body {
 	border: 1px solid #000000;
 	padding: 12px 6px;
 }
-/* #tab_supervision, #tab_blocks, #tab_arduino {
-	font-size: 14px;
-	line-height: 0;
-	padding: 0px 0px;
-	border: 1px #000000;
-}
-#tab_supervision:hover, #tab_blocks:hover, #tab_arduino:hover {
-	background-color: #FFFFFF; 
-	border-color: #000000;
-	color: #000000;
-} */
-/* #serialport_ide{
-	top: 5px;
-} */
+
 /*----------------------------------------------- */
 .menuPanel-ver {
 	clear: both;
@@ -156,15 +128,6 @@ html,body {
 	position: absolute;
 	height: 100%;
 }
-
-/* html[dir="RTL"] .menuPanel-ver {
-    clear: both;
-    float: right;
-    width: 200px;
-    padding-left: 0px;
-    padding-right: 10px;
-    position: absolute;
-} */
 
 .div_close_modal {
 	padding-right: 10px;	
@@ -180,23 +143,7 @@ html,body {
 	right: 5px;
 }
 
-/* #btn_card_picture_mini {
-	padding-right: 10px;	
-	float: left;
-	text-align: center;
-}
-
-#btn_card_picture_maxi {
-	padding-right: 10px;	
-	float: left;
-	text-align: center;
-} */
-
 .div_miniPicture-ver {
-/*     position: absolute; */
-/* 	float: left; */
-/* 	padding-left: 20px; */
-/* 	bottom: 45px; */
     text-align: center;
     clear: both;
 }
@@ -213,7 +160,6 @@ html,body {
 .div_help_button-ver {
     width: 200px;
     bottom: 10px;
-    /* position: absolute; */
     text-align: center;
 }
 
@@ -240,14 +186,8 @@ html,body {
 #div_accessibility_button {
     width: 200px;
     bottom: 90px;
-    /* position: absolute; */
     text-align: center;
 }
-
-/* html[dir="RTL"] .navbar-right {
-    margin-right: -50px;
-    width: 225px;
-} */
 
 .btn_ver {
 	text-align : left !important;
@@ -259,36 +199,16 @@ html,body {
 	margin-left:5px;
 }
 
-/* html[dir="RTL"] .divTabpanel-ver {
-    margin-left:0px;
-    margin-right:205px;
-}
-
-html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="RTL"] #menuPanelFiles {
-    float: right;
-} */
-
 .menuPanelBlockly-hor {
 	clear:both;
 	float: left;
 	padding-left: 10px;	
 }
 
-/* html[dir="RTL"] .menuPanelBlockly-hor, html[dir="RTL"] .menuPanelBlockly-ver {
-    float: right;
-    padding-right: 10px;
-	margin-top: 10px;
-} */
-
 .menuPanelFiles-hor {
 	float: right;
 	padding-right: 10px;
 }
-
-/* html[dir="RTL"] .menuPanelFiles-hor {
-    float: left;
-    padding-left: 10px;
-} */
 
 .divTabpanel-hor {
     position: absolute;
@@ -299,19 +219,10 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
     margin-left: 10px;
 }
 
-/* html[dir="RTL"] .divTabpanel-hor {
-    margin-left: 0px;
-} */
-
 .divSwitch-hor {
     float: left;
     padding-left: 10px;
 }
-
-/* html[dir="RTL"] .divSwitch-hor {
-    float: right;
-    padding-right: 10px;
-} */
 
 .divCard-hor {
     float: left;
@@ -334,20 +245,10 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	max-height:300px;
 }
 
-/* html[dir="RTL"] .divCard-hor {
-    float: right;
-    padding-right: 10px;
-} */
-
 .divConfig-hor {
     float: left;
     padding-left: 10px;
 }
-
-/* html[dir="RTL"] .divConfig-hor {
-    float: right;
-    padding-right: 10px;
-} */
 
 #btn_logout {
     position: absolute;
@@ -360,15 +261,7 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 }
 
 #languageMenu {
-	/*position: absolute;
-	top: 35px;
-	right: 15px;*/
 }
-
-/* html[dir="RTL"] #languageMenu {
-	left: 10px;
-	right: auto;
-} */
 
 #content_area,#content_blocks,#content_factory {
 	height: 100%;
@@ -419,11 +312,7 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	padding : 2px 5px 5px 10px;
 	background-color : #018790;
 }
-/* #btn_term {
-	right: 15px;
-	top: 5px;
-	z-index: 10;
-} */
+
 #pre_arduino {
     height: 70%;
     width: 100%;
@@ -431,9 +320,6 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 #serial-checboxes {
     margin-left: 20px;
 }
-/* html[dir="RTL"] #toggle_code {
-    left: 25px;
-} */
 
 #toggle_code pre {
 	height: 100%;
@@ -445,10 +331,6 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	bottom: 40px;
 	z-index: 10;
 }
-
-/* html[dir="RTL"] #btn_delete {
-    left: 100px;
-} */
 
 #pre_xml {
 	height: 85%;
@@ -469,10 +351,6 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 #select_all {
 	margin-left: 15px;
 }
-
-/* html[dir="RTL"] #select_all {
-    margin-right: 15px;
-} */
 
 #span_select_all {
 	font-weight: bold;
@@ -507,12 +385,6 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	white-space: pre-wrap;
 }
 
-.blocklyToolboxDiv {
-	background-color: #FFFFFF !important;
-	box-shadow: 5px 5px 5px grey !important;
-	width: 199px;
-}
-
 .blocklyFlyoutBackground {
 	fill: #FFFFFF !important;
 	fill-opacity: 1;
@@ -523,31 +395,23 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	padding: 0 !important;
 }
 
-.blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"] {
+.blocklyTreeRoot [role="treeitem"] {
 	position: relative;
 }
 
-.blocklyToolboxDiv_hide .blocklyTreeRoot_hide [role="treeitem"] {
+.blocklyTreeRoot_hide [role="treeitem"] {
 	position: fixed;
 }
 
-.blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]	.blocklyTreeRow {
+.blocklyTreeRoot [role="treeitem"]	.blocklyTreeRow {
 	line-height: normal !important;
 	padding: 6px 50px 6px 12px !important;
 }
-
-/* html[dir="RTL"] .blocklyToolboxDiv .blocklyTreeRoot [role="treeitem"]   .blocklyTreeRow {
-    padding: 6px 12px 6px 50px !important;
-} */
 
 .blocklyTreeRow {
 	height: 30px !important;
 	line-height: 30px !important;
 }
-
-/* .blocklyTreeRow:hover { */
-	/* background-color: #018790 !important; */
-/* } */
 
 .blocklyTreeSeparator {
 	background: none repeat scroll 0 0 #e9f9f9 !important;
@@ -562,10 +426,6 @@ html[dir="RTL"] #menuPanelConfig, html[dir="RTL"] #menuPanelBlockly, html[dir="R
 	top: 0;
 	width: 8px;
 }
-
-/* html[dir="RTL"] .colors_category {
-    right: 0;
-} */
 
 .loading {
     position: fixed;

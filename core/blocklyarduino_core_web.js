@@ -11,13 +11,11 @@ var BlocklyDuino = {};
 Blockly.pathToBlockly = './';
 Blockly.pathToMedia = './media/';
 
-BlocklyDuino.selectedToolbox = "toolbox_none";
 BlocklyDuino.selectedCard = 'none';
 BlocklyDuino.selectedTab = 'blocks';
 BlocklyDuino.inlineBool = true;
 BlocklyDuino.withImage = true;
 BlocklyDuino.ajaxOK = true;
-BlocklyDuino.toolboxInIndexHtml = false;
 
 /**
  * Blockly's main workspace.
@@ -33,7 +31,6 @@ var BlocklyLevel = 'none';
 BlocklyDuino.renderContent = function() {
     BlocklyDuino.workspace.render();
     $(".blocklyTreeSeparator").removeAttr("style");
-    $(".blocklyToolboxDiv").show();
     $("#tools_blocks").show();
     $("#btn_levels").show();
     $("#header_supervision").hide();
@@ -184,10 +181,6 @@ BlocklyDuino.bindFunctions = function() {
         BlocklyDuino.cardPicture_change_AIO();
     });
 
-    $('#toolboxes').on("focus", function() {
-        BlocklyDuino.selectedToolbox = $(this).val();
-    });
-
     $('#menuPanelBlockly li[id^=tab_]').on("click", function() {
         BlocklyDuino.selectedTab = $(this).attr('id').substring(4);
         BlocklyDuino.renderContent();
@@ -204,7 +197,6 @@ BlocklyDuino.bindFunctions = function() {
     });
 
     $('#btn_inline').on("click", BlocklyDuino.inline);
-
     $('#btn_wiring').on('click', function() {
         var dialogConvert = $("#wiringModal").dialog({
             autoOpen: false,
@@ -263,66 +255,6 @@ BlocklyDuino.bindFunctions = function() {
     });
 };
 
-
-/**
- * Build the xml using toolboxes checked in config modal and stored in session
- */
-BlocklyDuino.buildToolbox = function() {
-    // set the toolbox from url parameters
-    var toolboxIds = [];
-
-    $("#toolbox").children("category").each(function() {
-        toolboxIds.push($(this).attr("id"));
-    });
-
-    // sessionStorage.setItem('toolboxids', loadIds);
-
-    var xmlValue = '<xml id="toolbox">';
-    // var xmlids = loadIds.split(",");
-    for (var i = 0; i < toolboxIds.length; i++) {
-        if ($('#' + toolboxIds[i]).length) {
-            xmlValue += $('#' + toolboxIds[i])[0].outerHTML;
-        }
-    }
-
-    xmlValue += '</xml>';
-
-    return xmlValue;
-};
-
-/**
- * load the xml toolbox definition
- */
-BlocklyDuino.loadToolboxDefinition = function() {
-    var toolboxFile = "toolbox_arduino_all"
-
-    $("#toolboxes").val(toolboxFile);
-
-    $.ajax({
-        type: "GET",
-        url: "./toolbox/" + toolboxFile + ".xml",
-        dataType: "xml",
-        async: false
-    }).done(function(data) {
-        var toolboxXml = '<xml id="toolbox" style="display: none">';
-        toolboxXml += $(data).find('toolbox').html();
-        toolboxXml += '</xml>';
-        $("#toolbox").remove();
-        $('body').append(toolboxXml);
-        $("xml").find("category").each(function() {
-            // add attribute ID to keep categorie code
-            if (!$(this).attr('id')) {
-                $(this).attr('id', $(this).attr('name'));
-                $(this).attr('name', Blockly.Msg[$(this).attr('name')]);
-            }
-        });
-    }).fail(function(data) {
-        $("#toolbox").remove();
-        console.log('toolbox file problem');
-    });
-    console.log("Loaded Toolboxes");
-};
-
 /**
  * Initialize Blockly.  Called on page load.
  */
@@ -334,13 +266,10 @@ BlocklyDuino.init = function() {
 
     document.body.style.fontFamily = "OpenDyslexic";
 
-    BlocklyDuino.loadToolboxDefinition();
-
     Code.initLanguage();
 
     // minimize div
     $("#divTabpanel").css({ "margin-left": "5px" });
-    $('#div_toolboxes').removeClass("hidden");
     $("#div_miniPicture").removeClass("hidden");
     $('#icon_btn_size').addClass('glyphicon-resize-full');
     $('#icon_btn_size').removeClass('glyphicon-resize-small');
@@ -361,7 +290,7 @@ BlocklyDuino.init = function() {
         media: 'media/',
         renderer: 'custom_renderer',
         rtl: false,
-        toolbox: BlocklyDuino.buildToolbox(),
+        toolbox: toolbox_arduino_json,
         zoom: {
             controls: true,
             wheel: true

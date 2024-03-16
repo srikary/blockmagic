@@ -1,4 +1,4 @@
-export const toolbox = {
+var toolbox_arduino_json = {
   "kind": "categoryToolbox",
   "contents": [
     {
