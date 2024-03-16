@@ -10,14 +10,6 @@
  */
 'use strict';
 
-// goog.provide('Blockly.StaticTyping');
-
-// goog.require('Blockly.Block');
-// goog.require('Blockly.Type');
-// goog.require('Blockly.Types');
-// goog.require('Blockly.Workspace');
-// goog.require('goog.asserts');
-
 /**
  * Class for Static Typing.
  * @constructor

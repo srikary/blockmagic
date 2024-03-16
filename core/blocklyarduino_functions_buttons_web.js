@@ -19,31 +19,6 @@ BlocklyDuino.editArduinoCode = function() {
  */
 BlocklyDuino.saveXmlFile = function() {
     var xml = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
-
-    // var toolbox = sessionStorage.getItem('toolbox');
-    // if (!toolbox) {
-    //     toolbox = $("#toolboxes").val();
-    // }
-
-    // if (toolbox) {
-    //     var newel = document.createElement("toolbox");
-    //     newel.appendChild(document.createTextNode(toolbox));
-    //     xml.insertBefore(newel, xml.childNodes[0]);
-    // }
-
-    // var toolboxids = sessionStorage.getItem('toolboxids');
-    // if (toolboxids === undefined || toolboxids === "") {
-    //     if ($('#defaultCategories').length) {
-    //         toolboxids = $('#defaultCategories').html();
-    //     }
-    // }
-
-    // if (toolboxids) {
-    //     var newel = document.createElement("toolboxcategories");
-    //     newel.appendChild(document.createTextNode(toolboxids));
-    //     xml.insertBefore(newel, xml.childNodes[0]);
-    // }
-
     var data = Blockly.Xml.domToPrettyText(xml);
     var datenow = Date.now();
     var uri = 'data:text/xml;charset=utf-8,' + encodeURIComponent(data);
@@ -192,7 +167,6 @@ BlocklyDuino.miniMenuPanel = function() {
     }
 
     // remove url file
-    //search = search.replace(/([?&]url=)[^&]*/, '');
     window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;
 };
 

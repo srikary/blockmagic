@@ -8,15 +8,6 @@
  */
 'use strict';
 
-// goog.provide('Blockly.FieldInstance');
-
-// goog.require('Blockly.FieldDropdown');
-// goog.require('Blockly.Instances');
-// goog.require('Blockly.Msg');
-// goog.require('Blockly.utils');
-// goog.require('goog.string');
-
-
 /**
  * Class for a specific type of instances' dropdown field.
  * @param {?string} instanceName The default name for the instance. If null,

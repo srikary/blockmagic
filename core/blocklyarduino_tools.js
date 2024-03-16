@@ -19,17 +19,6 @@ BlocklyDuino.initBlocSort = function() {
     }
 }
 
-/**
- * Configuration & modify buttons state inside modal config
- */
-// BlocklyDuino.toggleFunctionsChoice = function() {
-//     // checked = sort by functions
-//     if ($('#toggle-Functions').prop('checked')) {
-//         sessionStorage.setItem('catblocsort', "F");
-//     } else {
-//         sessionStorage.setItem('catblocsort', "C");
-//     }
-// };
 
 /**
  * Validate global configuration
@@ -42,10 +31,6 @@ BlocklyDuino.validateConfigGlobal = function() {
     var search = window.location.search;
     //change Arduino card
     $("#board_select").blur();
-    // var kitornot = false;
-    // if ($("#board_select").val().substring(0, 4) == "kit_") {
-    //     kitornot = true;
-    // }
     if ($("#board_select").val() != "none") {
         if (window.confirm(MSG['arduino_card'] + ' ' + window.profile[$("#board_select").val()].description + ' ?')) {
             BlocklyDuino.workspace.clear();
@@ -57,45 +42,10 @@ BlocklyDuino.validateConfigGlobal = function() {
                 search = search.replace(/\?/, '?card=' + $("#board_select").val() + '&');
             }
 
-            // //recherche d'une maquette (toolbox) dans l'URL pour une maquette cablée complète, qui bloquera ensuite dans loadToolboxDefinition le bouton des configuration des catégories
-            // if (kitornot) {
-            //     if (search.length <= 1) {
-            //         search = '?toolbox=' + $("#toolboxes").val();
-            //     } else if (search.match(/[?&]toolbox=[^&]*/)) {
-            //         search = search.replace(/([?&]toolbox=)[^&]*/, '$1' + $("#board_select").val());
-            //     } else {
-            //         search = search.replace(/\?/, '?toolbox=' + $("#board_select").val() + '&');
-            //     }
-            //     BlocklyDuino.loadToolboxDefinition($("#board_select").val());
-            // } else {
-            //     search = search.replace(/([?&]toolbox=)[^&]*/, '$1' + 'toolbox_algo');
-            // }
         } else {
             $("#board_select").val(BlocklyDuino.selectedCard);
         }
     }
-
-    //change language
-    // var languageMenuSelected = $('#languageMenu option:selected').val();
-    // var newLang = encodeURIComponent(languageMenuSelected);
-    // if (search.length <= 1) {
-    //     search = '?lang=' + newLang;
-    // } else if (search.match(/[?&]lang=[^&]*/)) {
-    //     //en mode AIO sans languageMenu on ne fait rien pour le choix des langues
-    //     if ((newLang == 'undefined') || (newLang == "")) search = search;
-    //     else search = search.replace(/([?&]lang=)[^&]*/, '$1' + newLang);
-    // } else {
-    //     search = search.replace(/\?/, '?lang=' + newLang + '&');
-    // }
-
-    // var fontChoiced = BlocklyDuino.changeFont();
-    // if (search.length <= 1) {
-    //     search = '?font=' + fontChoiced;
-    // } else if (search.match(/[?&]font=[^&]*/)) {
-    //     search = search.replace(/([?&]font=)[^&]*/, '$1' + fontChoiced);
-    // } else {
-    //     search = search.replace(/\?/, '?font=' + fontChoiced + '&');
-    // }
 
     sessionStorage.setItem('ConfigGlobaleSeen', 'ok');
     window.location = window.location.protocol + '//' + window.location.host + window.location.pathname + search;

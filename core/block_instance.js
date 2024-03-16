@@ -24,21 +24,6 @@
  */
 'use strict';
 
-// goog.require('Blockly.Block');
-// goog.require('Blockly.Blocks');
-// goog.require('Blockly.Comment');
-// goog.require('Blockly.Connection');
-// goog.require('Blockly.Input');
-// goog.require('Blockly.Mutator');
-// goog.require('Blockly.Warning');
-// goog.require('Blockly.Workspace');
-// goog.require('Blockly.Xml');
-// goog.require('goog.array');
-// goog.require('goog.asserts');
-// goog.require('goog.math.Coordinate');
-// goog.require('goog.string');
-
-
 /**
  * Return all instances referenced by this block.
  * @param {string=} opt_instanceType Optional type of the instances to collect,
